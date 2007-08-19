@@ -22,15 +22,22 @@ My progress and design considerations can be followed at my <a href="http://blog
  
  <p><a href="http://blog.hvidtfeldts.net/"><img class="center" src="syntopia.png" alt="Syntopia Logo" /></a></p>
 
- <p>The source code is hosted on SourceForge, and can be accessed using SVN (<a href="https://sourceforge.net/svn/?group_id=202402">see instructions</a>).</p>
-
-  <p>For more info see the SourceForge project page:</p>
-  
-  <a href="https://sourceforge.net/projects/structuresynth/"><img class="center" src="http://sflogo.sourceforge.net/sflogo.php?group_id=202402&amp;type=5" width="210" height="62" alt="SourceForge.net Logo" /></a>
 				</div>			
 			</div>
 
 			
+			
+		<div class="post">
+				<div class="header">
+					<h3>Acknowledgements</h3>
+					
+				</div>
+				<div class="content">
+				<p>
+			Structure Synth was inspired by the <a href="http://www.chriscoyne.com/cfdg/">CFDG</a> syntax by Chris Coyne, and the <a href="http://www.contextfreeart.org/">Context Free GUI</a> by Mark Lentczner and John Horigan. The icons in the GUI are part of the <a href="http://www.everaldo.com/crystal/">Everaldo: Crystal</a> project. Structure Synth is built using the <a href="http://trolltech.com/developer/downloads/qt/index">Qt cross-platform GUI framework</a>. </p>
+			
+<p>The website uses a <a href="http://www.openwebdesign.org/viewdesign.phtml?id=3045&referer=%2Fuserinfo.phtml%3Fuser%3Dnode33">Open Web Design</a> by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>. It also uses <a href="http://orangoo.com/labs/GreyBox/">GreyBox</a> JavaScript.</p>
+			</div></div>
 
 			<!-- primary content end -->
 	
@@ -53,25 +60,28 @@ My progress and design considerations can be followed at my <a href="http://blog
 			<div class="content">
 			    <p>Structure Synth Links</p>
 				<ul class="linklist">
-					<li class="first"><a href="#">Syntopia Blog</a></li>
-					<li><a href="#">SourceForge project page</a></li>
-					<li><a href="#">Forums</a></li>
-					<li><a href="#">Subversion Repository</a></li>
-					<li><a href="#">Download</a></li>
-					<li><a href="#">User Manual</a></li>
-					<li><a href="#">Development</a></li>
+					<li class="first"><a href="http://sourceforge.net/projects/structuresynth/">SourceForge project page</a></li>
+					<li><a href="http://sourceforge.net/forum/?group_id=202402">Forums</a></li>
+					<li><a href="http://sourceforge.net/svn/?group_id=202402">Subversion Repository</a></li>
+					<li><a href="download.php">Download</a></li>
+					<li><a href="reference.php">User Manual</a></li>
+					<li><a href="development.php">Development</a></li>
 				</ul>
 				<p>&nbsp;</p> <!-- Hey, I'm not a web designer :-) -->
 				<p>Related Links</p>
 				<ul class="linklist">
-					<li class="first"><a href="#">Syntopia Blog</a></li>
-					<li><a href="#">Context Free</a></li>
-					<li><a href="#">CFDG</a></li>
-					<li><a href="#">VVVV</a></li>
-					<li><a href="#">NodeBox</a></li>
-					<li><a href="#">Processing blogs</a></li>
-					<li><a href=">http://www.generatorx.no/">GeneratorX</a></li>
+					<li class="first"><a href="http://blog.hvidtfeldts.net/">Syntopia Blog</a></li>
+					<li><a href="http://www.contextfreeart.org/">Context Free</a></li>
+					<li><a href="http://www.chriscoyne.com/cfdg/">CFDG</a></li>
+					<li><a href="http://www.vvvv.org/tiki-index.php">VVVV</a></li>
+					<li><a href="http://nodebox.net/code/index.php/Home">NodeBox</a></li>
+					<li><a href="http://processing.org/">Processing</a></li>
 				</ul>
+				<p>&nbsp;</p> 
+				
+				<p>
+				  <a href="http://sourceforge.net/projects/structuresynth/"><img class="center" src="http://sflogo.sourceforge.net/sflogo.php?group_id=202402&amp;type=3" width="125" height="37"  alt="SourceForge.net Logo" /></a>
+				</p>
 			</div>
 
 			<!-- secondary content end -->
