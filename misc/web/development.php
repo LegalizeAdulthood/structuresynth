@@ -27,7 +27,7 @@ The <b>rule model</b> is  an object-oriented representation of the rule set: i.e
 <div class="post"><div class="header"><h3>Syntopia Core</h3></div><div class="content">
 
 <p>
-Syntopia Core set of reusable building blocks.</p><p> Qt provides a lot of nice functionality (GUI Widgets, nice strings with regular expressions, XML, HTTP, …), but a few classes is almost always needed when building new applications. </p><p>This small application framework consists of:</p>
+Syntopia Core set of reusable building blocks.</p><p> Qt provides a lot of nice functionality (GUI Widgets, nice strings with regular expressions, XML, HTTP, …), but a few other standard classes are almost always needed when building new applications. </p><p>This small application framework consists of:</p>
 <dl>
 <dt>GLEngine</dt><dd>a small 3D engine (with mouse zoom/translation/rotation)</dd>
 <dt>Logging</dt><dd>a mini framework for simple logging/timing/user feedback</dd>

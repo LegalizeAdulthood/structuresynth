@@ -36,7 +36,7 @@ My progress and design considerations can be followed at my <a href="http://blog
 				<p>
 			Structure Synth was inspired by the <a href="http://www.chriscoyne.com/cfdg/">CFDG</a> syntax by Chris Coyne, and the <a href="http://www.contextfreeart.org/">Context Free GUI</a> by Mark Lentczner and John Horigan. The icons in the GUI are part of the <a href="http://www.everaldo.com/crystal/">Everaldo: Crystal</a> project. Structure Synth is built using the <a href="http://trolltech.com/developer/downloads/qt/index">Qt cross-platform GUI framework</a>. </p>
 			
-<p>The website uses a <a href="http://www.openwebdesign.org/viewdesign.phtml?id=3045&referer=%2Fuserinfo.phtml%3Fuser%3Dnode33">Open Web Design</a> by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>. It also uses <a href="http://orangoo.com/labs/GreyBox/">GreyBox</a> JavaScript.</p>
+<p>The website uses an <a href="http://www.openwebdesign.org/viewdesign.phtml?id=3045&referer=%2Fuserinfo.phtml%3Fuser%3Dnode33">Open Web Design</a> by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>. It also uses <a href="http://orangoo.com/labs/GreyBox/">GreyBox</a> JavaScript.</p>
 			</div></div>
 
 			<!-- primary content end -->

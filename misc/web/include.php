@@ -51,10 +51,10 @@ $text = <<<XOT
 	
 		<div id="menu">
 			<ul>
-				<li class="first"><a href="index.php">Home</a></li>
-				<li><a href="download.php">Download</a></li>
-				<li><a href="reference.php">Reference</a></li>
-				<li><a href="development.php">Development</a></li>
+				<li class="first"><a href="index.php">home</a></li>
+				<li><a href="download.php">download</a></li>
+				<li><a href="reference.php">reference</a></li>
+				<li><a href="development.php">development</a></li>
 			</ul>
 
 		<div id="date">updated $lastmod</div>
