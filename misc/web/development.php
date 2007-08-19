@@ -14,18 +14,13 @@ insertHeader("","");
 		
 	
 <p>
-This Eisenstein Engine takes the input script and converts it into a model:</p>
-<p>
-<ul>
-<li><b>preprocessing</b> (stripping comments and including other files)</li>
-<li><b>parsing</b> (a simple recursive descent parser)</li>
-<li><b>rule name resolving</b> and rule model construction.</li>
+This Eisenstein Engine takes the input script and converts it into a model: this includes <b>preprocessing</b> (stripping comments and including other files), <b>parsing</b> (a simple recursive descent parser), <b>rule name resolving</b> and rule model construction.
 </p>
 <p>
 The <b>builder</b> executes the rules defined in the model and calls the <b>renderer</b> as needed. The rendering uses an abstract interface, which should make it easy to extend with new renderers (e.g. PovRay output)
 </p>
 <p>
-Model: an object-oriented representation of the rule set: that is classes for rules (primitive, custom, ambiguous rules) transformations, transformation loops.
+The <b>rule model</b> is  an object-oriented representation of the rule set: i.e. classes for rules (primitive, custom, and ambiguous rules), transformations, and transformation loops.
 </p>
 	
 </div></div>
