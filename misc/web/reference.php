@@ -10,30 +10,40 @@ insertHeader("","");
 
 <div class="header"><h3>The Anatomy of EisenScript</h3></div><div class="content">
 	
+<p>
+Below is an EisenScript sample. Hover the mouse over the various parts for more information.
+</p>
+<pre>
+<span class="info" onMouseover="ddrivetip('<i>Global actions</i> are executed when the builder is initalized.<br>This action sets a limit to the recursive depth.', 400)"; onMouseout="hideddrivetip()">set maxdepth 100</span>
+<span class="info" onMouseover="ddrivetip('The is a <i>global rule call</i>.<br>This rule will be added to the initial stack of rules pending to be executed.', 300)"; onMouseout="hideddrivetip()">r1</span>
+<span class="info" onMouseover="ddrivetip('This is an example of a global rule call prepended with a <i>transformation loop</i>.<br>All actions which can be executed inside a rule can also be executed at the global scope.', 400)"; onMouseout="hideddrivetip()">36  * { x -2 ry 10   } r1</span>
 
-
-set maxdepth 100
-r1
-36  * { x -2 ry 10   } r1
-
-rule r1 maxdepth 10 {
-   2 * { y -1 } 3 * { rz 15 x 1 b 0.9 h -20  } r2
- { y 1 h 12 a 0.9  rx 36 }  r1
+<span class="info" onMouseover="ddrivetip('This is a <i>rule definition</i>. The <b>maxdepth</b> part is a <i>rule modifier</i>.', 400)"; onMouseout="hideddrivetip()">rule r1 maxdepth 10 {</span>
+   <span class="info" onMouseover="ddrivetip('An example of <i>nested transformation loops</i>. This construct will create 6 new rule calls.', 400)"; onMouseout="hideddrivetip()">2 * { y -1 } 3 * { rz 15 x 1 b 0.9 h -20  } r2</span>
+   <span class="info" onMouseover="ddrivetip('An simple example of a number of transformations being applied before calling a rule.<br>Notice that this rule calls it self.', 400)"; onMouseout="hideddrivetip()">{ y 1 h 12 a 0.9  rx 36 }  r1</span>
 }
 
 rule r2 {
    { s 0.9 0.1 1.1 hue 10 } box
 }
 
-rule r2 w 2 {
-  { hue 113 sat 19 a 23 s 0.1 0.9 1.1 } box
+<span class="info" onMouseover="ddrivetip('Notice the rule <b>r2</b> has two definitions:<br>It is an <i>ambiguous rule</i>.<br>If called, the builder will randomly choose one of its definitions according to their weights (w).', 400)"; onMouseout="hideddrivetip()">rule r2 w 2 {</span>
+   { hue 113 sat 19 a 23 s 0.1 0.9 1.1 } box
 }
 
-<span onMouseover="ddrivetip('JavaScriptKit.com JavaScript tutorials', 300)"; onMouseout="hideddrivetip()">
-hkjhkjhkjh</span> <span onMouseover="ddrivetip('asdas', 300)"; onMouseout="hideddrivetip()">
-xxx</span>
 
+</pre>
 </div>
+
+<div class="header"><h3>Actions</h3></div><div class="content">
+<p>Termination criteria</p>
+<dl class="longer">
+<dt>set maxdepth [integer]</dt><dd>Breaks after [integer] iterations (generations). This will also serve as a upper recursion limit for all rules.</dd>
+<dt>set maxobjects [integer]</dt><dd>After [integer] objects have been created, the construction is terminated.</dd>
+</dl>
+</div>
+
+
 
 <div class="header"><h3>Rule modifiers</h3></div><div class="content">
 	

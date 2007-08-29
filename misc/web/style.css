@@ -20,6 +20,10 @@ code {
 	
 }
 
+span.info {
+   background: #f00;
+}
+
 a {
 	color: #6498cc;
 	text-decoration: underline;

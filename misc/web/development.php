@@ -26,9 +26,12 @@ The <b>rule model</b> is  an object-oriented representation of the rule set: i.e
 </div></div>
 <div class="post"><div class="header"><h3>Syntopia Core</h3></div><div class="content">
 
+<img src="media/core.png" alt="diagram" />
+		
+	
 <p>
 Syntopia Core set of reusable building blocks.</p><p> Qt provides a lot of nice functionality (GUI Widgets, nice strings with regular expressions, XML, HTTP, …), but a few other standard classes are almost always needed when building new applications. </p><p>This small application framework consists of:</p>
-<dl>
+<dl  class="oneline">
 <dt>GLEngine</dt><dd>a small 3D engine (with mouse zoom/translation/rotation)</dd>
 <dt>Logging</dt><dd>a mini framework for simple logging/timing/user feedback</dd>
 <dt>Exceptions</dt><dd>a set of standard exceptions (not much here… )</dd>
@@ -36,7 +39,7 @@ Syntopia Core set of reusable building blocks.</p><p> Qt provides a lot of nice 
 <dt>Vector3</dt><dd>3-component vector manipulation (dot product, cross product, …)</dd>
 <dt>Matrix4</dt><dd>4×4 matrix manipulation (we use homogenous coordinates in the 3D engine) (rotations, multiplication, …)</dd>
 <dt class="na">Random</dt><dd>cross-platform random numbers + normal distributed random numbers.</dd>
-<dt class="na">Version</dt><dd>utils for mainting a version number and checking for updates on the net.</dd>
+<dt class="warn">Version</dt><dd>utils for mainting a version number and checking for updates on the net.</dd>
 </dl>
 <p>Possible extensions could be modules like Serialization, Persistence and a Help Browser.</p>
 
@@ -44,9 +47,11 @@ Syntopia Core set of reusable building blocks.</p><p> Qt provides a lot of nice 
 </div></div>  
 
 <div class="post"><div class="header"><h3>Eisenscript</h3></div><div class="content">
+<p><i>Pending...</i></p>
 </div></div>
 
 <div class="post"><div class="header"><h3>Roadmap</h3></div><div class="content">
+<p><i>Pending...</i></p>
 </div></div>
 
 </div>

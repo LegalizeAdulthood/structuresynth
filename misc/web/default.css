@@ -394,3 +394,13 @@ left: -300px;
 z-index: 101;
 visibility: hidden;
 }
+
+span.info {
+   background: #EEC;
+   xborder: 1px solid #aaa;
+}
+
+pre {
+   background: #F5F5F5;
+ 
+}

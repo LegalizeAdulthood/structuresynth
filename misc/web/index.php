@@ -16,7 +16,7 @@ insertHeader("","");
 <p>It is built in C++, OpenGL, and Qt 4.3. Builds will (at some point) be provided for Windows, Linux, and Mac.</p>
 
 <p>As of now this project is in the <strong>early alpha</strong> phase. 
-My progress and design considerations can be followed at my <a href="http://blog.hvidtfeldts.net/index.php/category/structure-synth/">Syntopia blog</a>.</p>
+The progress and design considerations can be tracked at the <a href="http://blog.hvidtfeldts.net/index.php/category/structure-synth/">Syntopia blog</a>.</p>
 
   
  
@@ -33,6 +33,7 @@ My progress and design considerations can be followed at my <a href="http://blog
 					
 				</div>
 				<div class="content">
+				<p>Structure Synth is being developed by Mikael Hvidtfeldt Christensen (mail: mikael<span /> (at) hvidtfeldts.net). It is free software, licensed under the GPL license.</p>
 				<p>
 			Structure Synth was inspired by the <a href="http://www.chriscoyne.com/cfdg/">CFDG</a> syntax by Chris Coyne, and the <a href="http://www.contextfreeart.org/">Context Free GUI</a> by Mark Lentczner and John Horigan. The icons in the GUI are part of the <a href="http://www.everaldo.com/crystal/">Everaldo: Crystal</a> project. Structure Synth is built using the <a href="http://trolltech.com/developer/downloads/qt/index">Qt cross-platform GUI framework</a>. </p>
 			
@@ -47,7 +48,7 @@ My progress and design considerations can be followed at my <a href="http://blog
 
 			<!-- secondary content start -->
 		
-			<h3>Screenshots</h3>
+			<h3>Examples</h3>
 			<div class="content">
 			
 			<a class="snap_noshots" href="media/menger.jpg" rel="gb_imageset[shots]" title="Menger">	<img class="picB" src="media/menger_s.jpg"  alt="" /></a>
