@@ -14,6 +14,10 @@ insertHeader("","");
 Below is an EisenScript sample. Hover the mouse over the various parts for more information.
 </p>
 <pre>
+<span class="info" onMouseover="ddrivetip('A <i>multiline comment</i>.', 400)"; onMouseout="hideddrivetip()">/*
+  Sample Torus.
+*/</span>
+
 <span class="info" onMouseover="ddrivetip('<i>Global actions</i> are executed when the builder is initalized.<br>This action sets a limit to the recursive depth.', 400)"; onMouseout="hideddrivetip()">set maxdepth 100</span>
 <span class="info" onMouseover="ddrivetip('The is a <i>global rule call</i>.<br>This rule will be added to the initial stack of rules pending to be executed.', 300)"; onMouseout="hideddrivetip()">r1</span>
 <span class="info" onMouseover="ddrivetip('This is an example of a global rule call prepended with a <i>transformation loop</i>.<br>All actions which can be executed inside a rule can also be executed at the global scope.', 400)"; onMouseout="hideddrivetip()">36  * { x -2 ry 10   } r1</span>
@@ -24,11 +28,11 @@ Below is an EisenScript sample. Hover the mouse over the various parts for more 
 }
 
 rule r2 {
-   { s 0.9 0.1 1.1 hue 10 } box
+   { <span class="info" onMouseover="ddrivetip('A transformation.<br>This transformation scales the coordinate system.', 400)"; onMouseout="hideddrivetip()">s 0.9 0.1 1.1</span> hue 10 } box <span class="info" onMouseover="ddrivetip('An <i>inline comment</i>.', 400)"; onMouseout="hideddrivetip()">// a comment</span>
 }
 
 <span class="info" onMouseover="ddrivetip('Notice the rule <b>r2</b> has two definitions:<br>It is an <i>ambiguous rule</i>.<br>If called, the builder will randomly choose one of its definitions according to their weights (w).', 400)"; onMouseout="hideddrivetip()">rule r2 w 2 {</span>
-   { hue 113 sat 19 a 23 s 0.1 0.9 1.1 } box
+   { <span class="info" onMouseover="ddrivetip('Examples of color transformations.', 400)"; onMouseout="hideddrivetip()">hue 113 sat 19 a 23</span> s 0.1 0.9 1.1 } box
 }
 
 
@@ -74,9 +78,9 @@ rule r2 {
 <p>Color space transformations</p>
 <dl class="oneline">
 	<dt>h / hue [float]</dt><dd>Adds the 'float' value to the hue color parameter for the current state. Hues are measured from 0 to 360 and wraps cyclicly - i.e. a hue of 400 is equal to a hue of 40.</dd>
-	<dt>sat [float]</dt><dd>Multiplies the 'float' value with the saturation color parameter for the current state. Saturations are measured from 0 to 1 and are clamped to this interval (i.e. values larger then 1 are set to 1).</dd>
+	<dt>sat [float]</dt><dd>Multiplies the 'float' value with the saturation color parameter for the current state. Saturation is measured from 0 to 1 and is clamped to this interval (i.e. values larger then 1 are set to 1).</dd>
 	<dt>b / brightness [float]</dt><dd>Multiples the 'float' value with the brightness color parameter for the current state. Brightness is measured from 0 to 1 and is clamped to this interval. Notice that parameter is sometimes called 'V' or 'Value' (and the color space is often refered to as <a href="http://en.wikipedia.org/wiki/HSV_color_space">HSV</a>).</dd>
-    <dt class="warn">a / alpha [float]</dt><dd>Multiplies the 'float' value with the alpha color parameter for the current state. Alpha is measured from 0 to 1 is clamped to this interval. An alpha value of zero is completely transperant, and an alpha value of one is completely opaque.</dd>
+    <dt class="warn">a / alpha [float]</dt><dd>Multiplies the 'float' value with the alpha color parameter for the current state. Alpha is measured from 0 to 1 and is clamped to this interval. An alpha value of zero is completely transparant, and an alpha value of one is completely opaque.</dd>
 	</dl>
 </div></div>
 	
@@ -93,9 +97,32 @@ rule r2 {
 <dt class="na">tube</dt><dd>polygonal cylinder (will be drawn smoothly as the coordinate system transforms).</dd>
 </dl>
 		
-</div></div>  
 
 </div>
+
+<div class="header"><h3>For Context Free / CFDG users</h3></div><div class="content">
+<p>The EisenScript syntax in Structure Synth has a lot in common with CFDG.</p>
+<p>There are however a few important differences:</p>
+<p>
+<b>The 'startrule' statement</b>: in CFDG startrules are explicitly specified. In EisenScript, a more generic approach is used: statements which can be used in a rule definition, can also be used at the top-level scope, so in order to specify a start-rule, just write the name of the rule.
+</p>
+
+<p>
+<b>Termination criteria</b>: in CFDG recursion automatically terminates when the objects produced are too small to be visible. This is a very elegant solution, but it is not easy to do in a dynamic 3D world, where the user can move and zoom with the camera. Several options exists in Structure Synth for termination the rendering.
+</p>
+<p>
+<b>Transformation order</b>: in CFDG transformations (which CFDG refers to as adjustments) in curly brackets are not applied in the order of appearence, and if multiple transformations of the same type are applied, only the last one is actually carried out. For transformations in square brackets in CFDG the order on the other hand is significant. In Structure Synth the transformation order is always significant: transformations are applied starting from the right-most one. 
+</p>
+<p>
+<b>Whitespace handling</b>: In Structure Synth every <i>token</i> (e.g. a number, a keyword, a symbolic name) must be separated by whitespace (ordinary spaces, newlines or tabs). This means that statements like " rule name{ ... }" is not valid - the correct form is " rule name { ... } ", with a whitespace after the rule name. This is mainly due to lazyness from my side (since this makes it very easy to write a tokenizer for the grammar), and in future version I might make the parser more forgiving.
+<p>
+
+
+</div>
+
+</div></div>  
+
+
 		
 		<div id="secondarycontent">
 

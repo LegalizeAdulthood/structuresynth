@@ -15,7 +15,7 @@ insertHeader("","");
 
 <p>It is built in C++, OpenGL, and Qt 4.3. Builds will (at some point) be provided for Windows, Linux, and Mac.</p>
 
-<p>As of now this project is in the <strong>early alpha</strong> phase. 
+<p>As of now this project is usable, but it is <strong>alpha</strong> quality. 
 The progress and design considerations can be tracked at the <a href="http://blog.hvidtfeldts.net/index.php/category/structure-synth/">Syntopia blog</a>.</p>
 
   
@@ -25,7 +25,30 @@ The progress and design considerations can be tracked at the <a href="http://blo
 				</div>			
 			</div>
 
+	
+
+		<div class="post">
+				<div class="header">
+					<h3>News</h3>
+					
+				</div>
+				<div class="content">
 			
+				
+				<dl  class="oneline">
+			
+			
+<dt>5 Sep 07</dt><dd>Structure Synth now compiles on Linux.</a></dd>
+<dt>27 Aug 07</dt><dd>Created a <a href="http://flickr.com/groups/structuresynth/">Flickr group for Structure Synth creations</a>.</dd>
+<dt>19 Aug 07</dt><dd>Created this website.</dd>
+<dt> 6 Aug 07</dt><dd>The project was moved to SourceForge.</dd>
+<dt>10 Jul 07</dt><dd>The first code added (to a Google Code repository).</dd>
+</dl>
+
+				</div>
+			</div>
+	
+	
 			
 		<div class="post">
 				<div class="header">

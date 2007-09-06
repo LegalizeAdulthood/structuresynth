@@ -16,7 +16,7 @@ insertHeader("","");
 	
  <p>The source code is hosted on SourceForge, and can be accessed using SVN (<a href="https://sourceforge.net/svn/?group_id=202402">see instructions</a>).</p>
 
- <p>It is only tested on Windows, so in order to get it to run on Mac / Linux some modifications might be necessary (but it is written using only standard C++ and with the cross-platform Qt API).</p>
+ <p>Structure Synth is developed on Windows, but it is known to compile under Linux (see below). It should compile on Mac OS X as well (though this is not tested).</p>
   </div>
   </div>
   
@@ -34,10 +34,52 @@ insertHeader("","");
   </p>
   
   
-  	
-		</div></div>
+  </div></div>
+  
+    <div class="post">
+				<div class="header">
+					<h3>Build Instructions (Linux)</h3>
+				</div>
+				<div class="content">
+				
+				<p>
+				This is instructions for compiling Structure Synth from a clean <a href="http://www.ubuntu.com/">Ubuntu</a> installation. I used Ubuntu 6.06 x86, but newer version should work just as good.
+				</p>
+				<p>
+				
+First of all, make sure you have C++ compiler and the X11 and OpenGL development libs. (And Subversion if fetching the source directly from the repository).</p>
+<pre>
+sudo aptitude install build-essential
+sudo aptitude install libx11-dev
+sudo aptitude install mesa-common-dev 
+sudo aptitude install libgl1-mesa-dev
+sudo aptitude install libglu1-mesa-dev
+sudo aptitude install subversion
+</pre>
+
+<p><br />Build Qt 4.3 with OpenGL support. (<a href="http://trolltech.com/developer/downloads/qt/x11">Download Qt here</a>)</p>
+<pre>
+./configure -opengl -nomake examples -nomake demos
+./make 
+sudo ./make install
+</pre>
+
+<p><br />Get the latest <a href="http://sourceforge.net/svn/?group_id=202402">Structure Synth sources</a>.</p>
+
+
+<p>Build structure synth.</p>
+<pre>
+qmake -project
+qmake trunk.pro
+make
+</pre>
+  <p><br />Enjoy.</p>
+  </div></div>
 		
-		</div>
+  	</div>
+	
+  	
+		
 		
 		<div id="secondarycontent">
 
