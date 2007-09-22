@@ -13,7 +13,7 @@ insertHeader("","");
 				<div class="content">
 					<p>Structure Synth is an application for creating 3D structures from a set of user specified rules. It is an attempt to make a 3D version of <a href="http://www.contextfreeart.org/">Context Free</a>.</p>
 
-<p>It is built in C++, OpenGL, and Qt 4.3. Builds will (at some point) be provided for Windows, Linux, and Mac.</p>
+<p>It is built in C++, OpenGL, and Qt 4.3. <a href="download.php">Builds</a> are currently provided for Windows only. It is possible to compile Structure Synth on Linux and it just might work on Mac as well.</p>
 
 <p>As of now this project is usable, but it is <strong>alpha</strong> quality. 
 The progress and design considerations can be tracked at the <a href="http://blog.hvidtfeldts.net/index.php/category/structure-synth/">Syntopia blog</a>.</p>
@@ -37,7 +37,7 @@ The progress and design considerations can be tracked at the <a href="http://blo
 				
 				<dl  class="oneline">
 			
-			
+<dt>21 Sep 07</dt><dd>Structure Synth Version 0.5.0 released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
 <dt>5 Sep 07</dt><dd>Structure Synth now compiles on Linux.</a></dd>
 <dt>27 Aug 07</dt><dd>Created a <a href="http://flickr.com/groups/structuresynth/">Flickr group for Structure Synth creations</a>.</dd>
 <dt>19 Aug 07</dt><dd>Created this website.</dd>
@@ -52,6 +52,25 @@ The progress and design considerations can be tracked at the <a href="http://blo
 			
 		<div class="post">
 				<div class="header">
+					<h3>Gallery</h3>
+					
+				</div>
+				<div class="content">
+				<p>A public gallery is now available at Flickr:<br /><a href="http://flickr.com/groups/structuresynth/">http://flickr.com/groups/structuresynth/</a><br>.</p>
+				<p>Everyone is welcome to upload their Structure Synth creations here, preferably with the script included.</p>
+				<p>
+				
+				<object align="middle" height="400" width="450">
+<param name="FlashVars" value="ids=483521@N21&amp;names=Structure Synth&amp;userName=syntopia&amp;userId=12131226@N03&amp;titles=on&amp;source=groups">
+<param name="PictoBrowser" value="http://www.db798.com/pictobrowser.swf">
+<param name="scale" value="noscale">
+<param name="bgcolor" value="#ffffff"><embed src="http://www.db798.com/pictobrowser.swf" flashvars="ids=483521@N21&amp;names=Structure Synth&amp;userName=syntopia&amp;userId=12131226@N03&amp;titles=on&amp;source=groups" loop="false" quality="best" scale="noscale" bgcolor="#ffffff" name="PictoBrowser" align="middle" height="400" width="450"></object>
+				
+			</p>
+			</div></div>
+
+					<div class="post">
+				<div class="header">
 					<h3>Acknowledgements</h3>
 					
 				</div>
@@ -63,6 +82,7 @@ The progress and design considerations can be tracked at the <a href="http://blo
 <p>The website uses an <a href="http://www.openwebdesign.org/viewdesign.phtml?id=3045&referer=%2Fuserinfo.phtml%3Fuser%3Dnode33">Open Web Design</a> by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>. It also uses <a href="http://orangoo.com/labs/GreyBox/">GreyBox</a> JavaScript.</p>
 			</div></div>
 
+			
 			<!-- primary content end -->
 	
 		</div>

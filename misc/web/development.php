@@ -5,6 +5,14 @@ $keywords = "";
 insertHeader("","");
 ?>
 	
+	<div class="post"><div class="header"><h3>Development</h3></div><div class="content">
+	<p><i>As of now, this section is a bit fuzzy...</i></p>
+<p>A detailed changelog can be found here: <a href="http://structuresynth.svn.sourceforge.net/viewvc/*checkout*/structuresynth/trunk/changelog.txt">changelog.txt</a></p>
+
+<p>A roadmap 'working draft' can be found here: <a href="http://structuresynth.svn.sourceforge.net/viewvc/*checkout*/structuresynth/trunk/roadmap.txt">roadmap.txt</a></p>
+</div></div>
+
+	
 <div class="post"><div class="header"><h3>Structure Synth Architecture</h3></div><div class="content">
 	
 <p>Structure Synth is written in C++ using Qt 4.3 and OpenGL</p>
@@ -46,13 +54,6 @@ Syntopia Core set of reusable building blocks.</p><p> Qt provides a lot of nice 
 		
 </div></div>  
 
-<div class="post"><div class="header"><h3>Eisenscript</h3></div><div class="content">
-<p><i>Pending...</i></p>
-</div></div>
-
-<div class="post"><div class="header"><h3>Roadmap</h3></div><div class="content">
-<p><i>Pending...</i></p>
-</div></div>
 
 </div>
 		
