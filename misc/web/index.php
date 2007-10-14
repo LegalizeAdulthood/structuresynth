@@ -56,15 +56,28 @@ The progress and design considerations can be tracked at the <a href="http://blo
 					
 				</div>
 				<div class="content">
-				<p>A public gallery is now available at Flickr:<br /><a href="http://flickr.com/groups/structuresynth/">http://flickr.com/groups/structuresynth/</a><br>.</p>
+				<p>A public gallery is now available at Flickr:<br /><a href="http://flickr.com/groups/structuresynth/">http://flickr.com/groups/structuresynth/</a>.</p>
 				<p>Everyone is welcome to upload their Structure Synth creations here, preferably with the script included.</p>
 				<p>
 				
-				<object align="middle" height="400" width="450">
-<param name="FlashVars" value="ids=483521@N21&amp;names=Structure Synth&amp;userName=syntopia&amp;userId=12131226@N03&amp;titles=on&amp;source=groups">
-<param name="PictoBrowser" value="http://www.db798.com/pictobrowser.swf">
-<param name="scale" value="noscale">
-<param name="bgcolor" value="#ffffff"><embed src="http://www.db798.com/pictobrowser.swf" flashvars="ids=483521@N21&amp;names=Structure Synth&amp;userName=syntopia&amp;userId=12131226@N03&amp;titles=on&amp;source=groups" loop="false" quality="best" scale="noscale" bgcolor="#ffffff" name="PictoBrowser" align="middle" height="400" width="450"></object>
+				 <div id="fullscreendemo">
+  <strong>This site requires Flash Player 8.0 or greater</strong><br />
+  Please click <a href="http://www.adobe.com/products/flashplayer/">here</a> to download.<br />
+  If you are sure you have the required version, press this link: <a href="readme.html?detectflash=false">bypass the detection</a>.
+  </div>
+<script type="text/javascript">
+//<![CDATA[
+var so = new SWFObject("polaroid.swf", "polaroid", "450px", "550px", "8", "#FFFFFF");
+// I picked this id random
+so.addVariable("flickrID","12131226@N03");
+// pretty black and white photos
+//so.addVariable("flickrTAGS","BlackandWhite");
+so.write("fullscreendemo");
+//]]>
+</script>
+				
+				
+			
 				
 			</p>
 			</div></div>
@@ -79,7 +92,7 @@ The progress and design considerations can be tracked at the <a href="http://blo
 				<p>
 			Structure Synth was inspired by the <a href="http://www.chriscoyne.com/cfdg/">CFDG</a> syntax by Chris Coyne, and the <a href="http://www.contextfreeart.org/">Context Free GUI</a> by Mark Lentczner and John Horigan. The icons in the GUI are part of the <a href="http://www.everaldo.com/crystal/">Everaldo: Crystal</a> project. Structure Synth is built using the <a href="http://trolltech.com/developer/downloads/qt/index">Qt cross-platform GUI framework</a>. </p>
 			
-<p>The website uses an <a href="http://www.openwebdesign.org/viewdesign.phtml?id=3045&referer=%2Fuserinfo.phtml%3Fuser%3Dnode33">Open Web Design</a> by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>. It also uses <a href="http://orangoo.com/labs/GreyBox/">GreyBox</a> JavaScript.</p>
+<p>The website uses an <a href="http://www.openwebdesign.org/viewdesign.phtml?id=3045&referer=%2Fuserinfo.phtml%3Fuser%3Dnode33">Open Web Design</a> by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>. It also uses <a href="http://orangoo.com/labs/GreyBox/">GreyBox</a> JavaScript. The Flickr slideshow is powered by <a href="http://www.no3dfx.com/polaroid/">Polaroid Gallery v.1.01</a>.</p>
 			</div></div>
 
 			

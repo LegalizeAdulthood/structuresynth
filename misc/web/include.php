@@ -35,6 +35,8 @@ $text = <<<XOT
 <script type="text/javascript" src="greybox/gb_scripts.js"></script>
 <link href="greybox/gb_styles.css" rel="stylesheet" type="text/css" />
 
+<script type="text/javascript" src="_inc/swfobject.js"></script>
+
 <script type="text/javascript">
 
 /***********************************************
