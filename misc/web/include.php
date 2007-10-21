@@ -152,6 +152,7 @@ document.onmousemove=positiontip
 			<ul>
 				<li class="first"><a href="index.php">home</a></li>
 				<li><a href="download.php">download</a></li>
+				<li><a href="learn.php">learn</a></li>
 				<li><a href="reference.php">reference</a></li>
 				<li><a href="development.php">development</a></li>
 			</ul>

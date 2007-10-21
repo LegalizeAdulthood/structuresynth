@@ -402,8 +402,15 @@ span.info {
 
 pre {
    background: #F5F5F5;
- 
+   margin-bottom: 10px;
 }
+
+.ipre {
+   background: #EEE;
+   white-space: no-wrap;
+  
+}
+
 
 a img {
   border: 1px #ddd;
