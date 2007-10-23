@@ -11,7 +11,7 @@ insertHeader("","");
 					
 				</div>
 				<div class="content">
-				<p>The current version of Structure Synth is Version 0.5.0. It is still an Alpha products, so expect some rough edges. Currently, only Windows builds are provided:</p>
+				<p>The current version of Structure Synth is Version 0.5.0. It is still 'alpha' quality, so expect some rough edges. Currently, only Windows builds are provided:</p>
 	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Windows_Binary-v0.5.0.zip?modtime=1190409054&big_mirror=0">StructureSynth-Windows_Binary-v0.5.0.zip</a></p>
 	 <p>Structure Synth is developed on Windows, but it is known to compile under Linux (see below). It should compile on Mac OS X as well (though this is not tested):</p>
 	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Source-v0.5.0.zip?modtime=1190409087&big_mirror=0">StructureSynth-Source-v0.5.0.zip</a></p>
