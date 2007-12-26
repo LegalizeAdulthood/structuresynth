@@ -75,7 +75,7 @@ rule r2 {
 	<dt>rz [float]</dt><dd>Rotation about the z axis. As above. </dd>
 	<dt>s [float]</dt><dd>Resizes the local coordinate system. Notice that the center for the resize is located at the center of the unit cube in the local system (at (0.5,0.5,0.5)</dd>
 	<dt>s [f1] [f2] [f3]</dt><dd>Resizes the local coordinate system. As above but with separate scale for each dimension.</dd>
-	<dt class="na">m [f1] ... [f9]</dt><dd>Applies the specified 3x3 rotation matrix to the transformation matrix for the current state. About the argument order: [f1],[f2],[f3] defines the first <i>row</i> of the matrix. </dd>
+	<dt>m [f1] ... [f9]</dt><dd>Applies the specified 3x3 rotation matrix to the transformation matrix for the current state. About the argument order: [f1],[f2],[f3] defines the first <i>row</i> of the matrix. </dd>
 	<dt class="warn">fx</dt><dd>Mirrors the local coordinate system about the x-axis. As above the mirroring planes is centered at the cube. </dd>
 	<dt class="warn">fy</dt><dd>Mirrors the local coordinate system about the y-axis. </dd>
 	<dt class="warn">fz</dt><dd>Mirrors the local coordinate system about the z-axis. </dd>
@@ -119,9 +119,7 @@ rule r2 {
 <p>
 <b>Transformation order</b>: in CFDG transformations (which CFDG refers to as adjustments) in curly brackets are not applied in the order of appearence, and if multiple transformations of the same type are applied, only the last one is actually carried out. For transformations in square brackets in CFDG the order on the other hand is significant. In Structure Synth the transformation order is always significant: transformations are applied starting from the right-most one. 
 </p>
-<p>
-<b>Whitespace handling</b>: In Structure Synth every <i>token</i> (e.g. a number, a keyword, a symbolic name) must be separated by whitespace (ordinary spaces, newlines or tabs). This means that statements like " rule name{ ... }" is not valid - the correct form is " rule name { ... } ", with a whitespace after the rule name. This is mainly due to lazyness from my side (since this makes it very easy to write a tokenizer for the grammar), and in future version I might make the parser more forgiving.
-<p>
+
 
 
 </div>

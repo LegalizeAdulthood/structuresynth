@@ -11,10 +11,10 @@ insertHeader("","");
 					
 				</div>
 				<div class="content">
-				<p>The current version of Structure Synth is Version 0.5.0. It is still 'alpha' quality, so expect some rough edges. Currently, only Windows builds are provided:</p>
-	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Windows_Binary-v0.5.0.zip?modtime=1190409054&big_mirror=0">StructureSynth-Windows_Binary-v0.5.0.zip</a></p>
+				<p>The current version of Structure Synth is Version 0.7.0. It is still 'alpha' quality, so expect some rough edges. It it quite stable though. Currently, only Windows builds are provided:</p>
+	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Windows_Binary_v0.7.0.zip?use_mirror=mesh">StructureSynth-Windows_Binary-v0.7.0.zip</a></p>
 	 <p>Structure Synth is developed on Windows, but it is known to compile under Linux (see below). It should compile on Mac OS X as well (though this is not tested):</p>
-	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Source-v0.5.0.zip?modtime=1190409087&big_mirror=0">StructureSynth-Source-v0.5.0.zip</a></p>
+	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Source-v0.7.0.zip?use_mirror=mesh">StructureSynth-Source-v0.7.0.zip</a></p>
 	
 	
  <p>For the latest changes, it is also possible to pull the source code directly from SourceForge. It can be accessed using SVN (<a href="https://sourceforge.net/svn/?group_id=202402">see instructions</a>).</p>
@@ -46,7 +46,7 @@ insertHeader("","");
 				<div class="content">
 				
 				<p>
-				This is instructions for compiling Structure Synth from a clean <a href="http://www.ubuntu.com/">Ubuntu</a> installation. I used Ubuntu 6.06 x86, but newer version should work just as good.
+				This is instructions for compiling Structure Synth from a clean <a href="http://www.ubuntu.com/">Ubuntu</a> installation. I used Ubuntu 6.06 x86, but newer version should work just as good (update: works on Ubuntu 7.10 as well - but you might have to turn off any advanced 3D desktop effects).
 				</p>
 				<p>
 				

@@ -15,7 +15,7 @@ insertHeader("","");
 
 <p>It is built in C++, OpenGL, and Qt 4.3. <a href="download.php">Builds</a> are currently provided for Windows only. It is possible to compile Structure Synth on Linux and it just might work on Mac as well.</p>
 
-<p>As of now this project is usable, but it is <strong>alpha</strong> quality. 
+<p>As of now this project is usable, but it is still <strong>alpha</strong> quality (although it is stable, some features are not implemented yet). 
 The progress and design considerations can be tracked at the <a href="http://blog.hvidtfeldts.net/index.php/category/structure-synth/">Syntopia blog</a>.</p>
 
   
@@ -37,6 +37,7 @@ The progress and design considerations can be tracked at the <a href="http://blo
 				
 				<dl  class="oneline">
 			
+<dt>25 dec 07</dt><dd>Structure Synth Version 0.7.0 released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
 <dt>21 Sep 07</dt><dd>Structure Synth Version 0.5.0 released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
 <dt>5 Sep 07</dt><dd>Structure Synth now compiles on Linux.</a></dd>
 <dt>27 Aug 07</dt><dd>Created a <a href="http://flickr.com/groups/structuresynth/">Flickr group for Structure Synth creations</a>.</dd>
