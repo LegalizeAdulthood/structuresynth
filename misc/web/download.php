@@ -39,6 +39,35 @@ insertHeader("","");
   
   </div></div>
   
+  
+    <div class="post">
+				<div class="header">
+					<h3>Build Instructions (Mac OS X)</h3>
+				</div>
+				<div class="content">
+				
+				<p>
+				Disclaimer: Now, I am by no means a Mac expert - trying to compile Structure Synth in XCode was my first experience with Mac OS X, so this procedure could probably be more efficient.
+</p><p>
+First install Qt Open Source for Mac. I tested with 4.3.4 which worked for me. I Used XCode 2.5 on Mac OS 10.4.7 (with Qt 4.3.4 Open Source).
+</p><p>
+Now check out the source (see the Linux build instructions), and type the following:
+</p>
+<p><pre>
+qmake -project -after "CONFIG += opengl" -o mac.pro
+qmake -spec macx-xcode mac.pro
+</pre></p>
+<p>
+Now an XCode project file has been created (mac.xcodeproj - actually a dir)
+Open this file in XCode. I do not know why, but somehow the Qt OpenGL modules is not properly referenced in the project file. 
+</p><p>
+I opened the 'mac' project, went to "External Frameworks and Libraries" and added QtOpenGL.framework and QtXml.framework by browsing to their locations. Contrary to my expectations this was not enough to make Structure Synth compile. The header files were still not found during the compile. To resolve this go to 'Project | Edit Active Target 'mac'' and go to the Build tab. Add the following Header search paths: '(qt install dir)/lib/QtOpenGL.framework/Versions/4/Headers' '(qt install dir)/Qt-4.3.4/lib/QtXML.framework/Versions/4/Headers' This is instructions for compiling Structure Synth from a clean <a href="http://www.ubuntu.com/">Ubuntu</a> installation. I used Ubuntu 6.06 x86, but newer version should work just as good (update: works on Ubuntu 7.10 as well - but you might have to turn off any advanced 3D desktop effects).
+				</p>
+				
+  <p><br />Enjoy.</p>
+  </div></div>
+	
+  
     <div class="post">
 				<div class="header">
 					<h3>Build Instructions (Linux)</h3>
