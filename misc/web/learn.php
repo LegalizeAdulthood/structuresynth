@@ -12,7 +12,7 @@ insertHeader("","");
 <p>
 States are modified by <i>transformations</i>. For instance we can move the coordinate system one unit in the x-direction by applying the transformation: <span class="ipre">{ x 1 }</span>. Similarly we can rotate the coordinate system 90 degrees about the x-axis by applying:<span class="ipre">{ rx 90 }</span>. States are automatically combined while parsing, that is <span class="ipre">{ x 1 x 1 }</span> is equal to <span class="ipre">{ x 2 }</span>. 
 </p><p>
-States can be combined with <i>rule calls</i> to create <i>actions</i>. <ipre>{ x 2 } box</ipre> is an example of a transformation followed by a rule call. 'box' is a built-in rule. Not surprisingly, this rule draws a box located at (0,0,0) -> (1,1,1) in the current coordinate system.
+States can be combined with <i>rule calls</i> to create <i>actions</i>. <span class="ipre">{ x 2 } box</span> is an example of a transformation followed by a rule call. 'box' is a built-in rule. Not surprisingly, this rule draws a box located at (0,0,0) -> (1,1,1) in the current coordinate system.
 </p><p>
 Now take a look at the following example:</p>
 <p>

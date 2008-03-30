@@ -114,7 +114,7 @@ rule r2 {
 </p>
 
 <p>
-<b>Termination criteria</b>: in CFDG recursion automatically terminates when the objects produced are too small to be visible. This is a very elegant solution, but it is not easy to do in a dynamic 3D world, where the user can move and zoom with the camera. Several options exists in Structure Synth for termination the rendering.
+<b>Termination criteria</b>: in CFDG recursion automatically terminates when the objects produced are too small to be visible. This is a very elegant solution, but it is not easy to do in a dynamic 3D world, where the user can move and zoom with the camera. Several options exist in Structure Synth for terminating the rendering.
 </p>
 <p>
 <b>Transformation order</b>: in CFDG transformations (which CFDG refers to as adjustments) in curly brackets are not applied in the order of appearence, and if multiple transformations of the same type are applied, only the last one is actually carried out. For transformations in square brackets in CFDG the order on the other hand is significant. In Structure Synth the transformation order is always significant: transformations are applied starting from the right-most one. 

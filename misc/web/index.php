@@ -13,9 +13,9 @@ insertHeader("","");
 				<div class="content">
 					<p>Structure Synth is an application for creating 3D structures from a set of user specified rules. It is an attempt to make a 3D version of <a href="http://www.contextfreeart.org/">Context Free</a>.</p>
 
-<p>It is built in C++, OpenGL, and Qt 4.3. <a href="download.php">Builds</a> are currently provided for Windows only. It is possible to compile Structure Synth on Linux and it just might work on Mac as well.</p>
+<p>It is built in C++, OpenGL, and Qt 4.3. <a href="download.php">Builds</a> are currently provided for Windows only. It is possible to compile Structure Synth on Linux and Mac as well.</p>
 
-<p>As of now this project is usable, but it is still <strong>alpha</strong> quality (although it is stable, some features are not implemented yet). 
+<p>As of now this project is usable, but it is still <strong>alpha</strong> quality (although it is quite stable, some features are not implemented yet). 
 The progress and design considerations can be tracked at the <a href="http://blog.hvidtfeldts.net/index.php/category/structure-synth/">Syntopia blog</a>.</p>
 
   
@@ -36,7 +36,7 @@ The progress and design considerations can be tracked at the <a href="http://blo
 			
 				
 				<dl  class="oneline">
-			
+	<dt>30 mar 08</dt><dd>After a short development break, hopefully I'll be able to dedicate some more time to this project the coming months. I've upgraded to Vista and VS 2008 as my primary development platform, and managed to create a build on Mac Os X as well. (see the <a href="download.php">build notes</a>)</dd>					
 <dt>25 dec 07</dt><dd>Structure Synth Version 0.7.0 released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
 <dt>21 Sep 07</dt><dd>Structure Synth Version 0.5.0 released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
 <dt>5 Sep 07</dt><dd>Structure Synth now compiles on Linux.</a></dd>
@@ -61,23 +61,8 @@ The progress and design considerations can be tracked at the <a href="http://blo
 				<p>Everyone is welcome to upload their Structure Synth creations here, preferably with the script included.</p>
 				<p>
 				
-				 <div id="fullscreendemo">
-  <strong>This site requires Flash Player 8.0 or greater</strong><br />
-  Please click <a href="http://www.adobe.com/products/flashplayer/">here</a> to download.<br />
-  If you are sure you have the required version, press this link: <a href="readme.html?detectflash=false">bypass the detection</a>.
-  </div>
-<script type="text/javascript">
-//<![CDATA[
-var so = new SWFObject("polaroid.swf", "polaroid", "450px", "550px", "8", "#FFFFFF");
-// I picked this id random
-so.addVariable("flickrID","12131226@N03");
-// pretty black and white photos
-//so.addVariable("flickrTAGS","BlackandWhite");
-so.write("fullscreendemo");
-//]]>
-</script>
-				
-				
+				<object width="450" height="439" align="middle"><param name="FlashVars" VALUE="ids=483521@N21&names=Structure Synth&userName=Syntopia&userId=12131226@N03&titles=on&source=groups&titles=on&displayNotes=on&thumbAutoHide=off&imageSize=medium&vAlign=mid&displayZoom=off&vertOffset=0&initialScale=off&bgAlpha=81"></param><param name="PictoBrowser" value="http://www.db798.com/pictobrowser.swf"></param><param name="scale" value="noscale"></param><param name="bgcolor" value="#d7d7d7"></param><embed src="http://www.db798.com/pictobrowser.swf" FlashVars="ids=483521@N21&names=Structure Synth&userName=Syntopia&userId=12131226@N03&titles=on&source=groups&titles=on&displayNotes=on&thumbAutoHide=off&imageSize=medium&vAlign=mid&displayZoom=off&vertOffset=0&initialScale=off&bgAlpha=81" loop="false" scale="noscale" bgcolor="#d7d7d7" width="450" height="439" name="PictoBrowser" align="middle"></embed></object>
+
 			
 				
 			</p>
@@ -93,7 +78,7 @@ so.write("fullscreendemo");
 				<p>
 			Structure Synth was inspired by the <a href="http://www.chriscoyne.com/cfdg/">CFDG</a> syntax by Chris Coyne, and the <a href="http://www.contextfreeart.org/">Context Free GUI</a> by Mark Lentczner and John Horigan. The icons in the GUI are part of the <a href="http://www.everaldo.com/crystal/">Everaldo: Crystal</a> project. Structure Synth is built using the <a href="http://trolltech.com/developer/downloads/qt/index">Qt cross-platform GUI framework</a>. </p>
 			
-<p>The website uses an <a href="http://www.openwebdesign.org/viewdesign.phtml?id=3045&referer=%2Fuserinfo.phtml%3Fuser%3Dnode33">Open Web Design</a> by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>. It also uses <a href="http://orangoo.com/labs/GreyBox/">GreyBox</a> JavaScript. The Flickr slideshow is powered by <a href="http://www.no3dfx.com/polaroid/">Polaroid Gallery v.1.01</a>.</p>
+<p>The website uses an <a href="http://www.openwebdesign.org/viewdesign.phtml?id=3045&referer=%2Fuserinfo.phtml%3Fuser%3Dnode33">Open Web Design</a> by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>. It also uses <a href="http://orangoo.com/labs/GreyBox/">GreyBox</a> JavaScript. The Flickr slideshow is powered by <a href="http://www.db798.com/pictobrowser/">PictoBrowser</a>.</p>
 			</div></div>
 
 			
@@ -108,9 +93,9 @@ so.write("fullscreendemo");
 			<h3>Examples</h3>
 			<div class="content">
 			
-			<a class="snap_noshots" href="media/menger.jpg" rel="gb_imageset[shots]" title="Menger">	<img class="picB" src="media/menger_s.jpg"  alt="" /></a>
-			<a class="snap_noshots" href="media/chaos.jpg" rel="gb_imageset[shots]" title="Chaos">	<img class="picB"  src="media/chaos_s.jpg"  alt="" /></a>
-			<a class="snap_noshots" href="media/tree.jpg" rel="gb_imageset[shots]" title="Tree">	<img class="picB"  src="media/tree_s.jpg"  alt="" /></a>
+			<a class="snap_noshots" href="images/ss1.jpg" rel="gb_imageset[shots]" title="Structure Synth IDE (Vista)">	<img class="picB" src="images/ss1s.jpg"  alt="" /></a>
+			<a class="snap_noshots" href="images/box1.jpg" rel="gb_imageset[shots]" title="Structure Synth (rendered in SunFlow)">	<img class="picB"  src="images/box1s.jpg"  alt="" /></a>
+			<a class="snap_noshots" href="images/flower.jpg" rel="gb_imageset[shots]" title="Structure Synth (OpenGL)">	<img class="picB"  src="images/flowers.jpg"  alt="" /></a>
 				
 			</div>
 			
