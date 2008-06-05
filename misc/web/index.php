@@ -13,9 +13,9 @@ insertHeader("","");
 				<div class="content">
 					<p>Structure Synth is an application for creating 3D structures from a set of user specified rules. It is an attempt to make a 3D version of <a href="http://www.contextfreeart.org/">Context Free</a>.</p>
 
-<p>It is built in C++, OpenGL, and Qt 4.3. <a href="download.php">Builds</a> are currently provided for Windows only. It is possible to compile Structure Synth on Linux and Mac as well.</p>
+<p>It is built in C++, OpenGL, and Qt 4.3. <a href="download.php">Builds</a> are currently provided for Windows only. It is possible to compile Structure Synth on Linux and Mac as well. (Update: I am trying to convince someone to create a Mac OS X build for Version 0.8)</p>
 
-<p>As of now this project is usable, but it is still <strong>alpha</strong> quality (although it is quite stable, some features are not implemented yet). 
+<p>As of now this project is usable, but it is still <strong>beta</strong> quality (although it is quite stable, not all planned features are completed). 
 The progress and design considerations can be tracked at the <a href="http://blog.hvidtfeldts.net/index.php/category/structure-synth/">Syntopia blog</a>.</p>
 
   
@@ -36,9 +36,10 @@ The progress and design considerations can be tracked at the <a href="http://blo
 			
 				
 				<dl  class="oneline">
+	<dt>5 jun 08</dt><dd>Structure Synth Version 0.8.0 (Exonautica) released with <a href="download.php">binaries</a> built for Windows. Features the new templated rendering system and improved control of the random seed.</dd>
 	<dt>30 mar 08</dt><dd>After a short development break, hopefully I'll be able to dedicate some more time to this project the coming months. I've upgraded to Vista and VS 2008 as my primary development platform, and managed to create a build on Mac Os X as well. (see the <a href="download.php">build notes</a>)</dd>					
-<dt>25 dec 07</dt><dd>Structure Synth Version 0.7.0 released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
-<dt>21 Sep 07</dt><dd>Structure Synth Version 0.5.0 released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
+<dt>25 dec 07</dt><dd>Structure Synth Version 0.7.0 (Nostromo) released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
+<dt>21 Sep 07</dt><dd>Structure Synth Version 0.5.0 (Graf Zeppelin) released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
 <dt>5 Sep 07</dt><dd>Structure Synth now compiles on Linux.</a></dd>
 <dt>27 Aug 07</dt><dd>Created a <a href="http://flickr.com/groups/structuresynth/">Flickr group for Structure Synth creations</a>.</dd>
 <dt>19 Aug 07</dt><dd>Created this website.</dd>
