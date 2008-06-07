@@ -110,6 +110,9 @@ rule r2 {
 <p>The EisenScript syntax in Structure Synth has a lot in common with CFDG.</p>
 <p>There are however a few important differences:</p>
 <p>
+<b>Context sensitivity</b>: A CFDG script can be viewed as a <a href="http://en.wikipedia.org/wiki/Context_free_grammar">grammar</a>, where the production rules are independent of their context - or put differently - when choosing between rules CFDG does not have any knowledge of the history of system. This 'Context Free' property of CFDG was deliberately omitted in EisenScript, simply for pragmatic reasons: some structures would be difficult to create without having some way to change the rules after a certain number of recursions. 
+</p>
+<p>
 <b>The 'startrule' statement</b>: in CFDG startrules are explicitly specified. In EisenScript, a more generic approach is used: statements which can be used in a rule definition, can also be used at the top-level scope, so in order to specify a start-rule, just write the name of the rule.
 </p>
 
