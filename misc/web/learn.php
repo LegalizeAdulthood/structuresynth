@@ -65,12 +65,65 @@ Here is another example demonstrating different kinds of transformations:<br/>
 1 * { y 6 } 10 * { x 2 s 0.9 } box
 </pre>
 </p>
+
+<h4>Built-in rules</h4>
+<p>
+The Box is an example of one the primitives - built-in rules - in Structure Synth. The other
+built-in rules are: Sphere, Dot, Grid, Line, <span class="na">Cylinder</span>, <span class="na">Mesh</span>, <span class="na">CylinderMesh</span>. 
+</p>
+<p>
+This example demonstrates different primitives (from left to right: mesh, grid, line, dot, box, sphere):
+<br/>
+<img src="media/primitives.png" />
+
+</p>
+
 </div></div>
 
 	
 <div class="post"><div class="header"><h3>Making Rules</h3></div><div class="content">
 	
-<p></p>
+<p>
+Custom rules are the key to creating complex and sophisticated structures. Rules are created using the 'rule' keyword. A rule can used the same way as any built-in primitive.
+
+The most important aspect of rules are, that they are able to call themselves. Take a look at the following example:
+
+<pre>
+R1
+
+rule R1 {
+  { x 0.9 rz 6 ry 6 s 0.99  sat 0.99  } R1
+  { s 2 } sphere
+}
+</pre>
+
+Which generates this output.
+<img src="media/rule.png" />
+
+Notice that this rule recursively calls itself. It would never terminate - however Structure Synth has a default maximum recursion depth of 1000 recursions. This value can be changes using the 'set maxdepth xxx' command. Another way to force termination would be using the 'set maxobjects xxx' keyword, which makes Structure Synth keep track of the number of objects drawn.
+
+</p>
+
+<h4>Adding some randomness</h4>
+<p>
+Now, in order to things interesting, we will probably want to create something less static - by adding some randomness. In Structure Synth this is achieved by creating multiple definitions for the same rule:
+<pre>
+R1
+
+rule R1 {
+  { x 0.9 rz 6 ry 6 s 0.99  sat 0.99  } R1
+  { s 2 } sphere
+}
+
+rule R1  {
+  { x 0.9 rz -6 ry 6 s 0.99  sat 0.99  } R1
+  { s 2 } sphere
+}
+</pre>
+
+Notice the 'R1' rule has two definitions. Now, whenever the Structure Synth builder needs to call the 'R1' rule, it will choose one of the definitions at random, resulting in something like the following image:<br />
+<img src="media/rule2.png" />
+</p>
 
 		
 </div></div>  
