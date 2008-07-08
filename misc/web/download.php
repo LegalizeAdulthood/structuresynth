@@ -50,7 +50,7 @@ insertHeader("","");
 				<div class="content">
 				
 				<p>
-				This is instructions for compiling Structure Synth from a clean <a href="http://www.ubuntu.com/">Ubuntu</a> installation. I used Ubuntu 6.06 x86, but newer version should work just as good (update: works on Ubuntu 7.10 as well - but you might have to turn off any advanced 3D desktop effects).
+				This is instructions for compiling Structure Synth from a clean <a href="http://www.ubuntu.com/">Ubuntu</a> installation. I used Ubuntu 6.06 x86, but newer version should work just as good (update: works on Ubuntu 7.10 and 8.04 as well - but you might have to turn off any advanced 3D desktop effects).
 				</p>
 				<p>
 				
@@ -62,24 +62,33 @@ sudo aptitude install mesa-common-dev
 sudo aptitude install libgl1-mesa-dev
 sudo aptitude install libglu1-mesa-dev
 sudo aptitude install subversion
+sudo aptitude install libxext-dev
 </pre>
 
 <p><br />Build Qt 4.3 with OpenGL support. (<a href="http://trolltech.com/developer/downloads/qt/x11">Download Qt here</a>)</p>
 <pre>
 ./configure -opengl -nomake examples -nomake demos
-./make 
-sudo ./make install
+make 
+sudo make install
 </pre>
 
 <p><br />Get the latest <a href="http://sourceforge.net/svn/?group_id=202402">Structure Synth sources</a>.</p>
 
 
-<p>Build structure synth.</p>
+<p>Build structure synth. Make sure your working directory is the directory containing the 'Examples' and 'Misc' folder.</p>
 <pre>
 qmake -project
-qmake trunk.pro
+qmake
 make
 </pre>
+<p><b>Update:</b> when I tried to build with Qt 4.4.0 and Ubuntu 8.04 the above failed, instead I had to use the following (the first two lines must not be broken):</p>
+<pre>
+/usr/local/Trolltech/Qt-4.4.0/bin/qmake 
+ -project -after "CONFIG+=opengl" -after "QT+=xml opengl"
+/usr/local/Trolltech/Qt-4.4.0/bin/qmake
+make
+</pre> 
+
   <p><br />Enjoy.</p>
   </div></div>
 
@@ -97,8 +106,8 @@ First install Qt Open Source for Mac. I tested with 4.3.4, which worked for me. 
 Now check out the source (see the Linux build instructions), and type the following:
 </p>
 <p><pre>
-qmake -project -after "CONFIG += opengl" -o mac.pro
-qmake -spec macx-xcode mac.pro
+qmake -project -after "CONFIG += opengl" 
+qmake -spec macx-xcode
 </pre></p>
 <p>
 Now an XCode project file has been created (mac.xcodeproj - actually a dir). 
