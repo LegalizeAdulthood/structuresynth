@@ -36,6 +36,7 @@ The progress and design considerations can be tracked at the <a href="http://blo
 			
 				
 				<dl  class="oneline">
+				<dt>13 jul 08</dt><dd>Structure Synth Version 0.8.5 released. Some missing dependencies in the Windows build caused the earlier version 0.8.0 not to work on most Windows XP systems. Also other bug fixes.</dd>
 	<dt>5 jun 08</dt><dd>Structure Synth Version 0.8.0 (Exonautica) released with <a href="download.php">binaries</a> built for Windows. Features the new templated rendering system and improved control of the random seed.</dd>
 	<dt>30 mar 08</dt><dd>After a short development break, hopefully I'll be able to dedicate some more time to this project the coming months. I've upgraded to Vista and VS 2008 as my primary development platform, and managed to create a build on Mac Os X as well. (see the <a href="download.php">build notes</a>)</dd>					
 <dt>25 dec 07</dt><dd>Structure Synth Version 0.7.0 (Nostromo) released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
