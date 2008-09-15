@@ -11,10 +11,11 @@ insertHeader("","");
 					
 				</div>
 				<div class="content">
-				<p>The current version of Structure Synth is Version 0.8.5 (Exonautica). It is beta quality, so expect some rough edges. It it quite stable though. Currently, only Windows builds are provided (mac builds coming soon):</p>
+				<p>The current version of Structure Synth is Version 0.8.5 (Exonautica). It is beta quality, so expect some rough edges. It it quite stable though. Windows builds:</p>
 	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Windows_Binary_v0.8.5.zip?use_mirror=mesh">StructureSynth-Windows_Binary-v0.8.5.zip</a></p>
 	 <p>Structure Synth is developed on Windows, but it is known to compile under Linux and Mac OS X as well (see below):</p>
 	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Source-v0.8.5.zip?use_mirror=mesh">StructureSynth-Source-v0.8.5.zip</a></p>
+	<p><b>Update: </b>David Burnett kindly provides a <a href="http://oxidizer.sf.net/Structure%20Synth.zip">binary Mac build</a> of Structure Synth Version 0.8.5 (more info at <a href="https://sourceforge.net/forum/forum.php?thread_id=2248832&forum_id=721981">this forum post</a>)</p>
 	
 	
  <p>For the latest changes, it is recommended to pull the source code directly from the SourceForge repository. It can be accessed using SVN (<a href="https://sourceforge.net/svn/?group_id=202402">see instructions</a>).</p>
