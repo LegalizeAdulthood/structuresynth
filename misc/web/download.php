@@ -102,7 +102,7 @@ make
 				<p>
 				Disclaimer: I am not a Mac expert - trying to compile Structure Synth in XCode was my first experience with Mac OS X.
 </p><p>
-First install Qt Open Source for Mac. I tested with 4.3.4, which worked for me. I Used XCode 2.5 on Mac OS 10.4.7 (with Qt 4.3.4 Open Source).
+First install Qt Open Source for Mac. I tested with 4.3.4, which worked for me. I used XCode 2.5 on Mac OS 10.4.7 (with Qt 4.3.4 Open Source).
 </p><p>
 Now check out the source (see the Linux build instructions), and type the following:
 </p>
@@ -114,7 +114,7 @@ qmake -spec macx-xcode
 Now an XCode project file has been created (mac.xcodeproj - actually a dir). 
 Open this file in XCode. 
 </p><p>
-Open the 'mac' project, go to "External Frameworks and Libraries" and add QtOpenGL.framework and QtXml.framework by browsing to their locations. The header files now needs to be added: go to 'Project | Edit Active Target 'mac'' and go to the Build tab. Add the following Header search paths:</p>
+Open the 'mac' project, go to "External Frameworks and Libraries" and add QtOpenGL.framework and QtXml.framework by browsing to their locations. The header files now need to be added: go to 'Project | Edit Active Target 'mac'' and go to the Build tab. Add the following header search paths:</p>
 <p><pre>'(qt_dir)/lib/QtOpenGL.framework/Versions/4/Headers' <br/>'(qt_dir)/Qt-4.3.4/lib/QtXML.framework/Versions/4/Headers'  </pre>
 </p>
 <p>It should now be possible to compile and run Structure Synth from XCode.</p>
