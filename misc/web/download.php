@@ -36,7 +36,10 @@ insertHeader("","");
     A Visual Studio 2008 solution file is part of the project. The free <a href="http://msdn2.microsoft.com/en-us/express/default.aspx">Visual Studio Express C++ 2008</a> can be used to build Structure Synth.
   </p>
   <p>
-    The <a href="http://trolltech.com/developer/downloads/qt">Qt 4.3.0/Windows Open Source Edition</a> is also necessary. The trickiest part is getting Qt compiled and installed with the Open Source version of Qt. <a href="http://wiki.qgis.org/qgiswiki/Building_QT_4_with_Visual_C++_2005">This tutorial explains how to do this</a>. Essentially you need to download a Patch file called <a href="http://sourceforge.net/project/showfiles.php?group_id=49109&amp;package_id=165202">'Advanced Compiler Support for 4.3.x'</a>. <b>Notice that Qt 4.3.4 will not work with the 'Advanced Compiler Support' patch! Use Qt 4.3.0 instead</b>. </p><p>You will also need to install the <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=0BAF2B35-C656-4969-ACE8-E4C0C0716ADB&amp;displaylang=en">Microsoft Windows Platform SDK</a> since this is not part of the Express editions of Visual Studio - notice that 'Windows 2003 SDK...' is the correct version for Windows XP. On Windows Vista use the <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=E6E1C3DF-A74F-4207-8586-711EBE331CDC&displaylang=en">Windows SDK for Windows Server 2008</a>.
+  <b>Update:</b> I do not think the 'Advanced Compiler Support' patches still are necessary for compiling newer versions of Qt with Visual Studio Express. See this link for a <a href="http://tom.paschenda.org/blog/?p=28">simpler installation guide</a>.
+  </p>
+  <p>
+    The <a href="http://trolltech.com/developer/downloads/qt">Qt 4.3.0/Windows Open Source Edition</a> is also necessary. The trickiest part is getting the Open Source version of Qt compiled and installed with Visual Studio. <a href="http://wiki.qgis.org/qgiswiki/Building_QT_4_with_Visual_C++_2005">This tutorial explains how to do this</a>. Essentially you need to download a Patch file called <a href="http://sourceforge.net/project/showfiles.php?group_id=49109&amp;package_id=165202">'Advanced Compiler Support for 4.3.x'</a>. <b>Notice that Qt 4.3.4 will not work with the 'Advanced Compiler Support' patch! Use Qt 4.3.0 instead</b>. </p><p>You will also need to install the <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=0BAF2B35-C656-4969-ACE8-E4C0C0716ADB&amp;displaylang=en">Microsoft Windows Platform SDK</a> since this is not part of the Express editions of Visual Studio - notice that 'Windows 2003 SDK...' is the correct version for Windows XP. On Windows Vista use the <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=E6E1C3DF-A74F-4207-8586-711EBE331CDC&displaylang=en">Windows SDK for Windows Server 2008</a>.
   </p>
   
   
@@ -73,7 +76,7 @@ make
 sudo make install
 </pre>
 
-<p><br />Get the latest <a href="http://sourceforge.net/svn/?group_id=202402">Structure Synth sources</a>.</p>
+<p><br />If you are feeling adventurous, get the latest <a href="http://sourceforge.net/svn/?group_id=202402">Structure Synth sources</a> otherwise download the latest zipped release above (releases are more stable).</p>
 
 
 <p>Build structure synth. Make sure your working directory is the directory containing the 'Examples' and 'Misc' folder.</p>
@@ -85,7 +88,7 @@ make
 <p><b>Update:</b> when I tried to build with Qt 4.4.0 and Ubuntu 8.04 the above failed, instead I had to use the following (the first two lines must not be broken):</p>
 <pre>
 /usr/local/Trolltech/Qt-4.4.0/bin/qmake 
- -project -after "CONFIG+=opengl" -after "QT+=xml opengl"
+ -project -after "CONFIG+=opengl" -after "QT+=xml opengl script"
 /usr/local/Trolltech/Qt-4.4.0/bin/qmake
 make
 </pre> 
