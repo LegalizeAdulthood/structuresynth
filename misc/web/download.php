@@ -7,17 +7,17 @@ insertHeader("","");
 	
 			<div class="post">
 				<div class="header">
-					<h3>Download</h3>
+					<h3>Get</h3>
 					
 				</div>
 				<div class="content">
-				<p>The current version of Structure Synth is Version 0.8.5 (Exonautica). It is beta quality, so expect some rough edges. It it quite stable though. Windows builds:</p>
+				<p>The current version of Structure Synth is Version 0.8.5 (Exonautica). It is beta quality, so expect some rough edges.
+				<p/><p><b>Windows build</b> (for 32-bit XP and Vista):</p>
 	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Windows_Binary_v0.8.5.zip?use_mirror=mesh">StructureSynth-Windows_Binary-v0.8.5.zip</a></p>
-	 <p>Structure Synth is developed on Windows, but it is known to compile under Linux and Mac OS X as well (see below):</p>
-	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Source-v0.8.5.zip?use_mirror=mesh">StructureSynth-Source-v0.8.5.zip</a></p>
-	<p><b>Update: </b>David Burnett kindly provides a <a href="http://oxidizer.sf.net/Structure%20Synth.zip">binary Mac build</a> of Structure Synth Version 0.8.5 (more info at <a href="https://sourceforge.net/forum/forum.php?thread_id=2248832&forum_id=721981">this forum post</a>)</p>
+	<p><b>Mac build</b> (Universal binary, Mac OS 10.5):</p><p> David Burnett kindly provides a <a href="http://oxidizer.sf.net/Structure%20Synth.zip">binary Mac build</a> of Structure Synth Version 0.8.5 (more info at <a href="https://sourceforge.net/forum/forum.php?thread_id=2248832&forum_id=721981">this forum post</a>)</p>
 	
-	
+	<p><b>Linux</b>:</p> 
+	<p>You will have to build it yourself. See the build instructions below. The source of the latest release can be found here: <a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Source-v0.8.5.zip?use_mirror=mesh">StructureSynth-Source-v0.8.5.zip</a></p>
  <p>For the latest changes, it is recommended to pull the source code directly from the SourceForge repository. It can be accessed using SVN (<a href="https://sourceforge.net/svn/?group_id=202402">see instructions</a>).</p>
 
 
@@ -54,46 +54,35 @@ insertHeader("","");
 				<div class="content">
 				
 				<p>
-				This is instructions for compiling Structure Synth from a clean <a href="http://www.ubuntu.com/">Ubuntu</a> installation. I used Ubuntu 6.06 x86, but newer version should work just as good (update: works on Ubuntu 7.10 and 8.04 as well - but you might have to turn off any advanced 3D desktop effects).
+				These instructions should work for Ubuntu 8.10 (but Structure Synth is known to compile on many other distributions). If you encounter graphics trouble, you might have to turn off any advanced 3D desktop effects.
 				</p>
 				<p>
-				
-First of all, make sure you have C++ compiler and the X11 and OpenGL development libs. (And Subversion if fetching the source directly from the repository).</p>
-<pre>
-sudo aptitude install build-essential
-sudo aptitude install libx11-dev
-sudo aptitude install mesa-common-dev 
-sudo aptitude install libgl1-mesa-dev
-sudo aptitude install libglu1-mesa-dev
-sudo aptitude install subversion
-sudo aptitude install libxext-dev
-</pre>
+You will need to have a C++ compiler, X11, Qt4, and OpenGL development libs (and Subversion if fetching the source directly from the repository):</p>
 
-<p><br />Build Qt 4.3 with OpenGL support. (<a href="http://trolltech.com/developer/downloads/qt/x11">Download Qt here</a>)</p>
+ <pre>
+# aptitude install build-essential libx11-dev 
+mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev 
+subversion libxext-dev libqt4-opengl-dev 
+</pre>
+<p>(No line breaks!)</p>
+<p>If you are feeling adventurous, get the latest <a href="http://sourceforge.net/svn/?group_id=202402">Structure Synth sources</a> otherwise download the latest zipped release above (releases are more stable).
+</p>
+<p>Build Structure Synth. Make sure your working directory is the directory containing the 'Examples' and 'Misc' folder.</p>
+<pre>$ qmake-qt4 -project -after "CONFIG+=opengl" 
+-after "QT+=xml opengl script" 
+$ qmake-qt4 
+$ make 
+</pre>
+  <p>That's it. Enjoy.</p>
+<p>Notice: if you build Qt from the <a href="http://trolltech.com/developer/downloads/qt/x11">sources</a>, remember to enable OpenGL support, e.g.:</p>
 <pre>
 ./configure -opengl -nomake examples -nomake demos
 make 
 sudo make install
 </pre>
 
-<p><br />If you are feeling adventurous, get the latest <a href="http://sourceforge.net/svn/?group_id=202402">Structure Synth sources</a> otherwise download the latest zipped release above (releases are more stable).</p>
 
 
-<p>Build structure synth. Make sure your working directory is the directory containing the 'Examples' and 'Misc' folder.</p>
-<pre>
-qmake -project
-qmake
-make
-</pre>
-<p><b>Update:</b> when I tried to build with Qt 4.4.0 and Ubuntu 8.04 the above failed, instead I had to use the following (the first two lines must not be broken):</p>
-<pre>
-/usr/local/Trolltech/Qt-4.4.0/bin/qmake 
- -project -after "CONFIG+=opengl" -after "QT+=xml opengl script"
-/usr/local/Trolltech/Qt-4.4.0/bin/qmake
-make
-</pre> 
-
-  <p><br />Enjoy.</p>
   </div></div>
 
   <div class="post">
