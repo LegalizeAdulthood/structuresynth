@@ -96,11 +96,22 @@ rule r2 {
 <dl class="oneline">
 <dt>box</dt><dd>solid box</dd>
 <dt>grid</dt><dd>wireframe box</dd>
-<dt>sphere</dt><dd>...</dd>
+<dt>sphere</dt><dd>the round thingy (as of now this primitive has some issues - e.g. ellipsoids are not working.)</dd>
 <dt>line</dt><dd>along x axis, centered in y,z plane.</dd>
 <dt>point</dt><dd>centered in coordinate system.</dd>
-<dt class="na">cylinder</dt><dd>the symmetry axis will be the current x axis.</dd>
-<dt class="na">tube</dt><dd>polygonal cylinder (will be drawn smoothly as the coordinate system transforms).</dd>
+<dt>triangle</dt><dd>creates a custom polygon. Specify the coordinates as follows: Triangle[0,0,0;1,0,0;0.5,0.5,0.5]</dd>
+<dt class="warn">mesh</dt><dd>prototype mesh</dd>
+<dt class="na">cylinder</dt><dd>the symmetry axis will be the current x axis. [Not implemented]</dd>
+<dt class="na">tube</dt><dd>polygonal cylinder (will be drawn smoothly as the coordinate system transforms). [Not implemented]</dd>
+</dl>
+		
+
+</div>
+
+<div class="post"><div class="header"><h3>Preprocessor commands</h3></div><div class="content">
+
+<dl class="oneline">
+<dt>#define&nbsp;varname&nbsp;value</dt><dd><br />substitutes every occurrence of 'varname' with 'value'. Value may contain spaces.</dd>
 </dl>
 		
 

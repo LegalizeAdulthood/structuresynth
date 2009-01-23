@@ -36,7 +36,7 @@ The progress and design considerations can be tracked at the <a href="http://blo
 			
 				
 				<dl  class="oneline">
-				<dt>23 jan 09</dt>Structure Synth Version 0.9.0 released. Now with camera export, preprocessor constants, and 17% more graphical primivites.</dd>
+				<dt>23 jan 09</dt><dd>Structure Synth Version 0.9.0 ("Glasnost") released. Now with camera export, preprocessor constants, and more...</dd>
 				<dt>15 sep 08</dt><dd>David Burnett has kindly provided a <a href="http://oxidizer.sf.net/Structure%20Synth.zip">binary Mac build</a> of Structure Synth Version 0.8.5 (more info at <a href="https://sourceforge.net/forum/forum.php?thread_id=2248832&forum_id=721981">this forum post</a>)</dd>
 				<dt>13 jul 08</dt><dd>Structure Synth Version 0.8.5 released. Some missing dependencies in the Windows build caused the earlier version 0.8.0 not to work on most Windows XP systems. Also other bug fixes.</dd>
 	<dt>5 jun 08</dt><dd>Structure Synth Version 0.8.0 (Exonautica) released with <a href="download.php">binaries</a> built for Windows. Features the new templated rendering system and improved control of the random seed.</dd>
