@@ -14,7 +14,9 @@ insertHeader("","");
 				<p>The current version of Structure Synth is Version 0.9.0 ("Glasnost"). It is beta quality, so expect some rough edges.
 				<p/><p><b>Windows build</b> (for 32-bit XP and Vista):</p>
 	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Windows_Binary_v0.9.0.zip?use_mirror=mesh">StructureSynth-Windows_Binary-v0.9.0.zip</a></p>
-	<p><b>Mac build</b> <i>Version 0.9 is not available yet!</i> - (Universal binary, Mac OS 10.5):</p><p> David Burnett kindly provides a <a href="http://oxidizer.sf.net/Structure%20Synth.zip">binary Mac build</a> of Structure Synth Version 0.8.5 (more info at <a href="https://sourceforge.net/forum/forum.php?thread_id=2248832&forum_id=721981">this forum post</a>)</p>
+	<p><b>Mac build</b> (Universal binary, Mac OS 10.5):</p>
+	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Mac_Universal_v0.9.0.zip?use_mirror=mesh">StructureSynth-Mac_Universal-v0.9.0.zip</a></p>
+	<p>(Thanks for David Burnett for providing this - for an outline of the build process see <a href="https://sourceforge.net/forum/message.php?msg_id=6239736">this forum post</a>) </p>
 	
 	<p><b>Linux</b>:</p> 
 	<p>You will have to build it yourself. See the build instructions below. The source of the latest release can be found here: <a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Source-v0.9.0.zip?use_mirror=mesh">StructureSynth-Source-v0.9.0.zip</a></p>
