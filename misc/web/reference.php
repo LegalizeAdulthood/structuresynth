@@ -106,7 +106,7 @@ rule r2 {
 </dl>
 		
 
-</div>
+</div></div>
 
 <div class="post"><div class="header"><h3>Preprocessor commands</h3></div><div class="content">
 
