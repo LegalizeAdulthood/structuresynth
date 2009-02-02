@@ -79,6 +79,7 @@ The progress and design considerations can be tracked at the <a href="http://blo
 				</div>
 				<div class="content">
 				<p>Structure Synth is being developed by Mikael Hvidtfeldt Christensen (mail: mikael<span /> (at) hvidtfeldts.net). It is free software, licensed under the GPL license.</p>
+			<p>The 'sunflowmulticolored' and 'renderman' export templates were created by Tom Beddard (<a href="http://www.subblue.com/">subblue</a>). The Mac builds are provided by David Burnett.</p>
 				<p>
 			Structure Synth was inspired by the <a href="http://www.chriscoyne.com/cfdg/">CFDG</a> syntax by Chris Coyne, and the <a href="http://www.contextfreeart.org/">Context Free GUI</a> by Mark Lentczner and John Horigan. The icons in the GUI are part of the <a href="http://www.everaldo.com/crystal/">Everaldo: Crystal</a> project. Structure Synth is built using the <a href="http://trolltech.com/developer/downloads/qt/index">Qt cross-platform GUI framework</a>. </p>
 			

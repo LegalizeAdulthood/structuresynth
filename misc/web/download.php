@@ -12,16 +12,25 @@ insertHeader("","");
 				</div>
 				<div class="content">
 				<p>The current version of Structure Synth is Version 0.9.0 ("Glasnost"). It is beta quality, so expect some rough edges.
-				<p/><p><b>Windows build</b> (for 32-bit XP and Vista):</p>
+				<p/>
+				
+				<table class="download"><tr><td><img src="images/windows.png" width="85px" /></td><td>
+				<p><b>Windows build</b> (for 32-bit XP and Vista):</p>
 	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Windows_Binary_v0.9.0.zip?use_mirror=mesh">StructureSynth-Windows_Binary-v0.9.0.zip</a></p>
-	<p><b>Mac build</b> (Universal binary, Mac OS 10.5):</p>
+				</td></tr><tr><td><img src="images/apple.png" width="85px" /></td><td>
+	
+		<p><b>Mac build</b> (Universal binary, Mac OS 10.5):</p>
 	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Mac_Universal_v0.9.0.zip?use_mirror=mesh">StructureSynth-Mac_Universal-v0.9.0.zip</a></p>
 	<p>(Thanks for David Burnett for providing this - for an outline of the build process see <a href="https://sourceforge.net/forum/message.php?msg_id=6239736">this forum post</a>) </p>
+	
+	</td></tr><tr><td><img src="images/tux.png" width="85px" /></td><td>
 	
 	<p><b>Linux</b>:</p> 
 	<p>You will have to build it yourself. See the build instructions below. The source of the latest release can be found here: <a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Source-v0.9.0.zip?use_mirror=mesh">StructureSynth-Source-v0.9.0.zip</a></p>
  <p>For the latest changes, it is recommended to pull the source code directly from the SourceForge repository. It can be accessed using SVN (<a href="https://sourceforge.net/svn/?group_id=202402">see instructions</a>).</p>
 
+ </td></tr></table>
+	
 
   </div>
   </div>

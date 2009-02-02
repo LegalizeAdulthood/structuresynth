@@ -344,7 +344,7 @@ position: relative;
 clear: both;
 height: 66px;
 text-align: center;
-line-height: 66px;
+xxline-height: 66px;
 background-image: url('images/a50.gif');
 color: #A8A88D;
 }
@@ -414,4 +414,23 @@ pre {
 
 a img {
   border: 1px #ddd;
+}
+
+
+table.download {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 0px;
+	border-style: none;
+	border-color: gray gray gray gray;
+	border-collapse: separate;
+	background-color: white;
+}
+
+table.download td {
+	border-width: 1px 1px 1px 1px;
+	padding: 8px;
+	border-style: dashed none none none;
+	border-color: gray gray gray gray;
+	background-color: white;
+	-moz-border-radius: 0px 0px 0px 0px;
 }
