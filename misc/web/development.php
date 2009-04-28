@@ -6,7 +6,7 @@ insertHeader("","");
 ?>
 	
 	<div class="post"><div class="header"><h3>Development</h3></div><div class="content">
-	<p><i>As of now, this section is a bit fuzzy...</i></p>
+	
 <p>A detailed changelog can be found here: <a href="http://structuresynth.svn.sourceforge.net/viewvc/*checkout*/structuresynth/trunk/changelog.txt">changelog.txt</a></p>
 
 <p>A roadmap 'working draft' can be found here: <a href="http://structuresynth.svn.sourceforge.net/viewvc/*checkout*/structuresynth/trunk/roadmap.txt">roadmap.txt</a></p>
@@ -46,7 +46,7 @@ Syntopia Core set of reusable building blocks.</p><p> Qt provides a lot of nice 
 <dt>Math</dt><dd>Various mathematical utilities</dd>
 <dt>Vector3</dt><dd>3-component vector manipulation (dot product, cross product, …)</dd>
 <dt>Matrix4</dt><dd>4×4 matrix manipulation (we use homogenous coordinates in the 3D engine) (rotations, multiplication, …)</dd>
-<dt class="na">Random</dt><dd>cross-platform random numbers + normal distributed random numbers.</dd>
+<dt>Random</dt><dd>cross-platform random numbers + normal distributed random numbers.</dd>
 <dt class="warn">Version</dt><dd>utils for mainting a version number and checking for updates on the net.</dd>
 </dl>
 <p>Possible extensions could be modules like Serialization, Persistence and a Help Browser.</p>

@@ -44,10 +44,13 @@ rule r2 {
 <dl class="longer">
 <dt>set maxdepth [integer]</dt><dd>Breaks after [integer] iterations (generations). This will also serve as a upper recursion limit for all rules.</dd>
 <dt>set maxobjects [integer]</dt><dd>After [integer] objects have been created, the construction is terminated.</dd>
+<dt>set minsize [float]</dt><dd>Allows you to specify how large or small a given object can be before terminating. The 'size' parameter refers to the length of the diagonal of a unit cube in the current local state. The initial coordinate frame goes from (0,0,0) to (1,1,1) and hence has a diagonal length of sqrt(3)~1.7). It is possible to specify both a mix and a min size. The termination criteria only stops the current branch - if other branches are still within a valid range, the will be continued. <a href="http://www.flickr.com/photos/syntopia/3291301410/">More info...</a></dd>
+<dt>set maxsize [float]</dt><dd>See above.</dd>
 </dl>
 <p><b>Other</b></p>
 <dl class="longer">
 <dt>set seed [integer]</dt><dd>Allows you to set the random seed. This makes it possible to reproduce creations.</dd>
+<dt>set seed initial</dt><dd>This allows you to set the seed to its initial value (the value specified in the seed box). Notice that each rule call branch maintains its own sequence of random numbers. This makes it possible to generate the same set of random numbers as used earlier, making it possible to combine randomness with self-similarity. <a href="http://www.flickr.com/photos/syntopia/3272916772/">More info</a>.</dd>
 <dt>set background [color]</dt><dd>Allows you to set the background color. Colors are specified as text-strings parsed using Qt's <a href="http://doc.trolltech.com/4.3/qcolor.html#setNamedColor">color parsing</a>, allowing for standard HTML RGB specifications (e.g. #F00 or #FF0000), but also SVG keyword names (e.g. red or even lightgoldenrodyellow).</dd>
 </dl>
 </div>
@@ -85,9 +88,17 @@ rule r2 {
 	<dt>h / hue [float]</dt><dd>Adds the 'float' value to the hue color parameter for the current state. Hues are measured from 0 to 360 and wraps cyclicly - i.e. a hue of 400 is equal to a hue of 40.</dd>
 	<dt>sat [float]</dt><dd>Multiplies the 'float' value with the saturation color parameter for the current state. Saturation is measured from 0 to 1 and is clamped to this interval (i.e. values larger then 1 are set to 1).</dd>
 	<dt>b / brightness [float]</dt><dd>Multiples the 'float' value with the brightness color parameter for the current state. Brightness is measured from 0 to 1 and is clamped to this interval. Notice that parameter is sometimes called 'V' or 'Value' (and the color space is often refered to as <a href="http://en.wikipedia.org/wiki/HSV_color_space">HSV</a>).</dd>
-    <dt class="warn">a / alpha [float]</dt><dd>Multiplies the 'float' value with the alpha color parameter for the current state. Alpha is measured from 0 to 1 and is clamped to this interval. An alpha value of zero is completely transparant, and an alpha value of one is completely opaque.</dd>
+    <dt>a / alpha [float]</dt><dd>Multiplies the 'float' value with the alpha color parameter for the current state. Alpha is measured from 0 to 1 and is clamped to this interval. An alpha value of zero is completely transparant, and an alpha value of one is completely opaque.</dd>
 	<dt>color [color]</dt><dd>This commands sets the color to an <i>absolut</i> color (most other transformations are relative modifications on the current state). Colors are specified as text-strings parsed using Qt's <a href="http://doc.trolltech.com/4.3/qcolor.html#setNamedColor">color parsing</a>, allowing for standard HTML RGB specifications (e.g. #F00 or #FF0000), but also SVG keyword names (e.g. red or even lightgoldenrodyellow)</dd>
+	<dt>blend [color] [strength]</dt><dd>Blends the current color with the specified color. A strength of 1.0 will weight the current and new color evenly. Colors are mixed in HSV color space. Hue's will wrap around. Saturation and Value are clamped to [0,1]. Notice that since the mixing is performed in HSV space, the result may seems counterintuitive. For instance blending a red color into a blue color, may have intermediate green steps (since you are change the hue - so you will move around on the HSV color circle). <a href="http://www.flickr.com/photos/syntopia/3287820331/">More info...</a></dd>
+	<dt>set color random</dt><dd>Chooses a random color (using the current colorpool - see below).</dd>
+	<dt>set colorpool [scheme]</dt><dd>Determines how random colors are drawn. The possible schemes are:<br /><b>randomhue</b> - chooses a random hue, with full brighness and saturation.<br /><b>randomrgb</b> - three independent random r,g, and b values.<br /><b>greyscale</b> - random r=g=b.<br /><b>image:filename.png</b> - color sampling. Chooses a random pixel from the specified image.<br /><b>list:orange,white,grey</b> - chooses from the specified list of colors. A color may appear multiple times to increase its weight. <a href="http://blog.hvidtfeldts.net/index.php/2009/04/random-colors-color-pools-and-dual-mersenne-twister-goodness/">More info...</a></dd>
+
 	</dl>
+	
+	
+	
+	
 </div></div>
 	
 <div class="post"><div class="header"><h3>Drawing Primitives</h3></div><div class="content">
@@ -112,6 +123,7 @@ rule r2 {
 
 <dl class="oneline">
 <dt>#define&nbsp;varname&nbsp;value</dt><dd><br />substitutes every occurrence of 'varname' with 'value'. Value may contain spaces.</dd>
+<dt>#define&nbsp;varname&nbsp;value (float:0-40)</dt><dd><br />As above, but creates a pane with sliders for each of the variables defined. The values in the float-statement determines the lower and upper slider bounds. Example: '#define angle 14 (float:0-90)' will create a GUI slider for adjusting the angle parameter between 0 and 90.</dd>
 </dl>
 		
 

@@ -13,7 +13,7 @@ insertHeader("","");
 				<div class="content">
 					<p>Structure Synth is an application for creating 3D structures from a set of user specified rules. It is an attempt to make a 3D version of <a href="http://www.contextfreeart.org/">Context Free</a>.</p>
 
-<p>It is built in C++, OpenGL, and Qt 4.3. <a href="download.php">Builds</a> are currently provided for Windows and Mac. It is possible to compile Structure Synth on Linux as well.</p>
+<p>It is built in C++, OpenGL, and Qt 4.5. <a href="download.php">Builds</a> are currently provided for Windows and Mac. It is possible to compile Structure Synth on Linux as well.</p>
 
 <p>As of now this project is usable, but it is still <strong>beta</strong> quality (although it is quite stable, not all planned features are completed). 
 The progress and design considerations can be tracked at the <a href="http://blog.hvidtfeldts.net/index.php/category/structure-synth/">Syntopia blog</a>.</p>
@@ -36,6 +36,7 @@ The progress and design considerations can be tracked at the <a href="http://blo
 			
 				
 				<dl  class="oneline">
+				<dt>28 apr 09</dt><dd>Structure Synth Version 0.9.5 ("Haiku") has been released. Lots of <a href="http://blog.hvidtfeldts.net/index.php/2009/04/structure-synth-095-haiku-released/">new features</a>. <a href="download.php">Download it here</a>.</dd>
 				<dt>23 jan 09</dt><dd>Structure Synth Version 0.9.0 ("Glasnost") released. Now with camera export, preprocessor constants, and more... <a href="download.php">Download it here</a>.</dd>
 				<dt>15 sep 08</dt><dd>David Burnett has kindly provided a <a href="http://oxidizer.sf.net/Structure%20Synth.zip">binary Mac build</a> of Structure Synth Version 0.8.5 (more info at <a href="https://sourceforge.net/forum/forum.php?thread_id=2248832&forum_id=721981">this forum post</a>)</dd>
 				<dt>13 jul 08</dt><dd>Structure Synth Version 0.8.5 released. Some missing dependencies in the Windows build caused the earlier version 0.8.0 not to work on most Windows XP systems. Also other bug fixes.</dd>
@@ -78,10 +79,10 @@ The progress and design considerations can be tracked at the <a href="http://blo
 					
 				</div>
 				<div class="content">
-				<p>Structure Synth is being developed by Mikael Hvidtfeldt Christensen (mail: mikael<span /> (at) hvidtfeldts.net). It is free software, licensed under the GPL license.</p>
-			<p>The 'sunflowmulticolored' and 'renderman' export templates were created by Tom Beddard (<a href="http://www.subblue.com/">subblue</a>). The Mac builds are provided by David Burnett.</p>
+				<p>Structure Synth is being developed by Mikael Hvidtfeldt Christensen (mail: mikael<span /> (at) hvidtfeldts.net). It is free software, licensed under the GPL/LPGL license.</p>
+			<p>Export template contributions by <a href="http://www.subblue.com/">Subblue</a>, <a href="http://www.flickr.com/photos/33807726@N02/">Neon22</a>, <a href="http://www.flickr.com/photos/groovelock/">Groovelock</a>, SourceZuka and David Bucciarelli. The Mac builds are provided by David Burnett. Debian and Ubuntu packaging by Miriam Ruiz.</p>
 				<p>
-			Structure Synth was inspired by the <a href="http://www.chriscoyne.com/cfdg/">CFDG</a> syntax by Chris Coyne, and the <a href="http://www.contextfreeart.org/">Context Free GUI</a> by Mark Lentczner and John Horigan. The icons in the GUI are part of the <a href="http://www.everaldo.com/crystal/">Everaldo: Crystal</a> project. Structure Synth is built using the <a href="http://trolltech.com/developer/downloads/qt/index">Qt cross-platform GUI framework</a>. </p>
+			Structure Synth was heavily inspired by the <a href="http://www.chriscoyne.com/cfdg/">CFDG</a> syntax by Chris Coyne, and the <a href="http://www.contextfreeart.org/">Context Free GUI</a> by Mark Lentczner and John Horigan. The icons in the GUI are part of the <a href="http://www.everaldo.com/crystal/">Everaldo: Crystal</a> project. Structure Synth is built using the <a href="http://trolltech.com/developer/downloads/qt/index">Qt cross-platform GUI framework</a>. </p>
 			
 <p>The website uses an <a href="http://www.openwebdesign.org/viewdesign.phtml?id=3045&referer=%2Fuserinfo.phtml%3Fuser%3Dnode33">Open Web Design</a> by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>. It also uses <a href="http://orangoo.com/labs/GreyBox/">GreyBox</a> JavaScript. The Flickr slideshow is powered by <a href="http://www.db798.com/pictobrowser/">PictoBrowser</a>.</p>
 			</div></div>

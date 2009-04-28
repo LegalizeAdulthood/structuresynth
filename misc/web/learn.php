@@ -5,7 +5,6 @@ $keywords = "";
 insertHeader("","");
 ?>
 	
-<p><b><i>This section is under construction...</i></b></p>
 	<div class="post"><div class="header"><h3>States, transformations and actions.</h3></div><div class="content">
 	
 <p>Structure Synth is all about <i>states</i>. A state describes the current coordinate system and the current coloring mode. The coordinate system determines the position, orientation and size of all object drawn while in the current state. </p>

@@ -11,23 +11,25 @@ insertHeader("","");
 					
 				</div>
 				<div class="content">
-				<p>The current version of Structure Synth is Version 0.9.0 ("Glasnost"). It is beta quality, so expect some rough edges.
+				<p>The current version of Structure Synth is Version 0.9.5 (Haiku). It is beta quality, so expect some rough edges.
 				<p/>
 				
 				<table class="download"><tr><td><img src="images/windows.png" width="85px" /></td><td>
 				<p><b>Windows build</b> (for 32-bit XP and Vista):</p>
-	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Windows_Binary_v0.9.0.zip?use_mirror=mesh">StructureSynth-Windows_Binary-v0.9.0.zip</a></p>
+	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Windows_Binary_v0.9.5.zip?use_mirror=mesh">StructureSynth-Windows_Binary-v0.9.5.zip</a></p>
 				</td></tr><tr><td><img src="images/apple.png" width="85px" /></td><td>
 	
 		<p><b>Mac build</b> (Universal binary, Mac OS 10.5):</p>
 	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Mac_Universal_v0.9.0.zip?use_mirror=mesh">StructureSynth-Mac_Universal-v0.9.0.zip</a></p>
+	<p><b>Notice</b>: No v0.9.5 build yet! </p>
 	<p>(Thanks for David Burnett for providing this - for an outline of the build process see <a href="https://sourceforge.net/forum/message.php?msg_id=6239736">this forum post</a>) </p>
 	
 	</td></tr><tr><td><img src="images/tux.png" width="85px" /></td><td>
 	
 	<p><b>Linux</b>:</p> 
-	<p>You will have to build it yourself. See the build instructions below. The source of the latest release can be found here: <a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Source-v0.9.0.zip?use_mirror=mesh">StructureSynth-Source-v0.9.0.zip</a></p>
+	<p>You will have to build it yourself. See the build instructions below. The source of the latest release can be found here: <a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Source-v0.9.5.zip?use_mirror=mesh">StructureSynth-Source-v0.9.5.zip</a></p>
  <p>For the latest changes, it is recommended to pull the source code directly from the SourceForge repository. It can be accessed using SVN (<a href="https://sourceforge.net/svn/?group_id=202402">see instructions</a>).</p>
+ 
 
  </td></tr></table>
 	
@@ -46,14 +48,15 @@ insertHeader("","");
   <p>
     A Visual Studio 2008 solution file is part of the project. The free <a href="http://msdn2.microsoft.com/en-us/express/default.aspx">Visual Studio Express C++ 2008</a> can be used to build Structure Synth.
   </p>
-  <p>
-  <b>Update:</b> I do not think the 'Advanced Compiler Support' patches still are necessary for compiling newer versions of Qt with Visual Studio Express. See this link for a <a href="http://tom.paschenda.org/blog/?p=28">simpler installation guide</a>.
+  <p>You will need to install the <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=0BAF2B35-C656-4969-ACE8-E4C0C0716ADB&amp;displaylang=en">Microsoft Windows Platform SDK</a> since this is not part of the Express editions of Visual Studio - notice that 'Windows 2003 SDK...' is the correct version for Windows XP. On Windows Vista use the <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=E6E1C3DF-A74F-4207-8586-711EBE331CDC&displaylang=en">Windows SDK for Windows Server 2008</a>.
   </p>
   <p>
-    The <a href="http://trolltech.com/developer/downloads/qt">Qt 4.3.0/Windows Open Source Edition</a> is also necessary. The trickiest part is getting the Open Source version of Qt compiled and installed with Visual Studio. <a href="http://wiki.qgis.org/qgiswiki/Building_QT_4_with_Visual_C++_2005">This tutorial explains how to do this</a>. Essentially you need to download a Patch file called <a href="http://sourceforge.net/project/showfiles.php?group_id=49109&amp;package_id=165202">'Advanced Compiler Support for 4.3.x'</a>. <b>Notice that Qt 4.3.4 will not work with the 'Advanced Compiler Support' patch! Use Qt 4.3.0 instead</b>. </p><p>You will also need to install the <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=0BAF2B35-C656-4969-ACE8-E4C0C0716ADB&amp;displaylang=en">Microsoft Windows Platform SDK</a> since this is not part of the Express editions of Visual Studio - notice that 'Windows 2003 SDK...' is the correct version for Windows XP. On Windows Vista use the <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=E6E1C3DF-A74F-4207-8586-711EBE331CDC&displaylang=en">Windows SDK for Windows Server 2008</a>.
+  You will also need to download and compile Qt 4.5. While Nokia provide binary Windows builds for Qt, they do not support the Visual C++ compiler. The source for Qt for Windows can be found here: <a href="ftp://ftp.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.1.zip">qt-win-opensource-src-4.5.1.zip</a> (or check for <a href="ftp://ftp.qtsoftware.com/qt/source/">newer versions</a>).
   </p>
-  
-  
+  <p>
+ For a guide to installing and compiling Qt, see this <a href="http://tom.paschenda.org/blog/?p=28">Qt installation guide</a>.
+  </p>
+ 
   </div></div>
  
  
@@ -103,9 +106,7 @@ sudo make install
 				<div class="content">
 				
 				<p>
-				Disclaimer: I am not a Mac expert - trying to compile Structure Synth in XCode was my first experience with Mac OS X.
-</p><p>
-First install Qt Open Source for Mac. I tested with 4.3.4, which worked for me. I used XCode 2.5 on Mac OS 10.4.7 (with Qt 4.3.4 Open Source).
+First install <a href="http://www.qtsoftware.com/downloads">Qt Open Source</a> for Mac (version 4.5.0 or later). 
 </p><p>
 Now check out the source (see the Linux build instructions), and type the following:
 </p>
@@ -117,8 +118,8 @@ qmake -spec macx-xcode
 Now an XCode project file has been created (mac.xcodeproj - actually a dir). 
 Open this file in XCode. 
 </p><p>
-Open the 'mac' project, go to "External Frameworks and Libraries" and add QtOpenGL.framework and QtXml.framework by browsing to their locations. The header files now need to be added: go to 'Project | Edit Active Target 'mac'' and go to the Build tab. Add the following header search paths:</p>
-<p><pre>'(qt_dir)/lib/QtOpenGL.framework/Versions/4/Headers' <br/>'(qt_dir)/Qt-4.3.4/lib/QtXML.framework/Versions/4/Headers'  </pre>
+Open the 'mac' project, go to "External Frameworks and Libraries" and add QtScript.framework, QtOpenGL.framework and QtXml.framework by browsing to their locations. The header files now need to be added: go to 'Project | Edit Active Target 'mac'' and go to the Build tab. Add the following header search paths:</p>
+<p><pre>'(qt_dir)/lib/QtOpenGL.framework/Versions/4/Headers' <br/>'(qt_dir)/lib/QtScript.framework/Versions/4/Headers' <br/>'(qt_dir)/Qt-4.3.4/lib/QtXML.framework/Versions/4/Headers'  </pre>
 </p>
 <p>It should now be possible to compile and run Structure Synth from XCode.</p>
   </div></div>
