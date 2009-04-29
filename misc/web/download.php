@@ -27,7 +27,7 @@ insertHeader("","");
 	</td></tr><tr><td><img src="images/tux.png" width="85px" /></td><td>
 	
 	<p><b>Linux</b>:</p> 
-	<p>You will have to build it yourself. See the build instructions below. The source of the latest release can be found here: <a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Source-v0.9.5.zip?use_mirror=mesh">StructureSynth-Source-v0.9.5.zip</a></p>
+	<p>You will have to build it yourself. See the build instructions below. The source of the latest release can be found here: <a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Source-v0.9.5.1.zip?use_mirror=mesh">StructureSynth-Source-v0.9.5.1.zip</a></p>
  <p>For the latest changes, it is recommended to pull the source code directly from the SourceForge repository. It can be accessed using SVN (<a href="https://sourceforge.net/svn/?group_id=202402">see instructions</a>).</p>
  
 
@@ -74,7 +74,7 @@ insertHeader("","");
 You will need to have a C++ compiler, X11, Qt4, and OpenGL development libs (and Subversion if fetching the source directly from the repository):</p>
 
  <pre>
-# aptitude install build-essential libx11-dev 
+# sudo aptitude install build-essential libx11-dev 
 mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev 
 subversion libxext-dev libqt4-opengl-dev 
 </pre>
