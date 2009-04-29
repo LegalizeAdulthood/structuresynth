@@ -20,8 +20,8 @@ insertHeader("","");
 				</td></tr><tr><td><img src="images/apple.png" width="85px" /></td><td>
 	
 		<p><b>Mac build</b> (Universal binary, Mac OS 10.5):</p>
-	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Mac_Universal_v0.9.0.zip?use_mirror=mesh">StructureSynth-Mac_Universal-v0.9.0.zip</a></p>
-	<p><b>Notice</b>: No v0.9.5 build yet! </p>
+	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Mac_Universal_v0.9.5.zip?use_mirror=mesh">StructureSynth-Mac_Universal-v0.9.5.zip</a></p>
+	
 	<p>(Thanks for David Burnett for providing this - for an outline of the build process see <a href="https://sourceforge.net/forum/message.php?msg_id=6239736">this forum post</a>) </p>
 	
 	</td></tr><tr><td><img src="images/tux.png" width="85px" /></td><td>
