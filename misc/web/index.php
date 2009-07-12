@@ -11,11 +11,19 @@ insertHeader("","");
 					
 				</div>
 				<div class="content">
-					<p>Structure Synth is an application for creating 3D structures from a set of user specified rules. It is an attempt to make a 3D version of <a href="http://www.contextfreeart.org/">Context Free</a>.</p>
+					
+					
+					<p>Structure Synth is a cross-platform application for generating 3D structures by specifying a design grammar. Even simple systems may generate surprising and complex structures. The design grammar approach was originally devised by Chris Coyne (for a 2D  implementation see the popular <a href="http://www.contextfreeart.org/">Context Free Art</a>).</p>
+					
+					<p>Structure Synth offers a graphical environment with multiple tabs, syntax highlighting, and OpenGL preview. Integration with third-party renderers (such as Sunflow and POV-Ray) is possible using a flexible template based export system.</p>
+					
+					
+<p>Structure Synth is built in C++, OpenGL, and Qt 4.5. <a href="download.php">Builds</a> are currently provided for Windows and Mac. It is possible to compile Structure Synth on Linux as well. On Debian and Ubuntu a 'structure-synth' package exists.</p>
 
-<p>It is built in C++, OpenGL, and Qt 4.5. <a href="download.php">Builds</a> are currently provided for Windows and Mac. It is possible to compile Structure Synth on Linux as well.</p>
 
-<p>As of now this project is usable, but it is still <strong>beta</strong> quality (although it is quite stable, not all planned features are completed). 
+
+
+<p>
 The progress and design considerations can be tracked at the <a href="http://blog.hvidtfeldts.net/index.php/category/structure-synth/">Syntopia blog</a>.</p>
 
   
@@ -36,6 +44,9 @@ The progress and design considerations can be tracked at the <a href="http://blo
 			
 				
 				<dl  class="oneline">
+				
+				<dt>10 jul 09</dt><dd>Structure Synth Version 1.0 ("Potemkin") has been released. See the <a href="http://blog.hvidtfeldts.net/index.php/2009/07/structure-synth-10-potemkin-released/">new features</a> or <a href="download.php">download it here</a>.</dd>
+				
 				<dt>28 apr 09</dt><dd>Structure Synth Version 0.9.5 ("Haiku") has been released. Lots of <a href="http://blog.hvidtfeldts.net/index.php/2009/04/structure-synth-095-haiku-released/">new features</a>. <a href="download.php">Download it here</a>.</dd>
 				<dt>23 jan 09</dt><dd>Structure Synth Version 0.9.0 ("Glasnost") released. Now with camera export, preprocessor constants, and more... <a href="download.php">Download it here</a>.</dd>
 				<dt>15 sep 08</dt><dd>David Burnett has kindly provided a <a href="http://oxidizer.sf.net/Structure%20Synth.zip">binary Mac build</a> of Structure Synth Version 0.8.5 (more info at <a href="https://sourceforge.net/forum/forum.php?thread_id=2248832&forum_id=721981">this forum post</a>)</dd>
