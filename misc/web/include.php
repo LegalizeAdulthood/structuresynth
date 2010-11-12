@@ -182,7 +182,7 @@ $text = <<<ZOT
 	
 		<div id="footer">
 		
-			Structure Synth 2007-2009. <br /> 
+			Structure Synth 2007-2010. <br /> 
 			Web pages based on a design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>.
 		
 		</div>

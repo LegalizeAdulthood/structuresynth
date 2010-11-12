@@ -68,25 +68,22 @@ insertHeader("","");
 				<div class="content">
 				
 				<p>
-				These instructions should work for Ubuntu 8.10 (but Structure Synth is known to compile on many other distributions). If you encounter graphics trouble, you might have to turn off any advanced 3D desktop effects.
+				These instructions should work for Ubuntu 10.10 (but Structure Synth is known to compile on many other distributions). If you encounter graphics trouble, you might have to turn off any advanced 3D desktop effects.
 				</p>
 				<p>
 You will need to have a C++ compiler, X11, Qt4, and OpenGL development libs (and Subversion if fetching the source directly from the repository):</p>
 
- <pre>
-# sudo aptitude install build-essential libx11-dev 
-mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev 
-subversion libxext-dev libqt4-opengl-dev 
-</pre>
+ <code>
+# sudo apt-get install build-essential libx11-dev mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev subversion libxext-dev libqt4-opengl-dev <br/>
+</code>
 <p>(No line breaks!)</p>
 <p>If you are feeling adventurous, get the latest <a href="http://sourceforge.net/svn/?group_id=202402">Structure Synth sources</a> otherwise download the latest zipped release above (releases are more stable).
 </p>
 <p>Build Structure Synth. Make sure your working directory is the directory containing the 'Examples' and 'Misc' folder.</p>
-<pre>$ qmake-qt4 -project -after "CONFIG+=opengl" 
--after "QT+=xml opengl script" 
-$ qmake-qt4 
-$ make 
-</pre>
+<code>$ qmake-qt4 -project -after "CONFIG+=opengl" -after "QT+=xml opengl script" <br/>
+$ qmake-qt4 <br/>
+$ make <br/>
+</code>
   <p>That's it. Enjoy.</p>
 <p>Notice: if you build Qt from the <a href="http://trolltech.com/developer/downloads/qt/x11">sources</a>, remember to enable OpenGL support, e.g.:</p>
 <pre>
