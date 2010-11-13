@@ -91,7 +91,7 @@ The progress and design considerations can be tracked at the <a href="http://blo
 				</div>
 				<div class="content">
 				<p>Structure Synth is being developed by Mikael Hvidtfeldt Christensen (mail: mikael<span /> (at) hvidtfeldts.net). It is free software, licensed under the GPL/LPGL license.</p>
-			<p>Export template contributions by <a href="http://www.subblue.com/">Subblue</a>, <a href="http://www.flickr.com/photos/33807726@N02/">Neon22</a>, <a href="http://www.flickr.com/photos/groovelock/">Groovelock</a>, SourceZuka and David Bucciarelli. The Mac builds are provided by David Burnett. Debian and Ubuntu packaging by Miriam Ruiz.</p>
+			<p>Export template contributions by <a href="http://www.subblue.com/">Subblue</a>, <a href="http://www.flickr.com/photos/33807726@N02/">Neon22</a>, <a href="http://www.flickr.com/photos/groovelock/">Groovelock</a>, SourceZuka, David Bucciarelli, and François Beaune. The Mac builds are provided by David Burnett. Debian and Ubuntu packaging by Miriam Ruiz.</p>
 				<p>
 			Structure Synth was heavily inspired by the <a href="http://www.chriscoyne.com/cfdg/">CFDG</a> syntax by Chris Coyne, and the <a href="http://www.contextfreeart.org/">Context Free GUI</a> by Mark Lentczner and John Horigan. The icons in the GUI are part of the <a href="http://www.everaldo.com/crystal/">Everaldo: Crystal</a> project. Structure Synth is built using the <a href="http://trolltech.com/developer/downloads/qt/index">Qt cross-platform GUI framework</a>. </p>
 			
