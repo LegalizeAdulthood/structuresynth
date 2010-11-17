@@ -11,23 +11,24 @@ insertHeader("","");
 					
 				</div>
 				<div class="content">
-				<p>The current version of Structure Synth is Version 1.0 (Potemkin).
+				<p>The current version of Structure Synth is Version 1.5 (Hinxton).
 				<p/>
 				
 				<table class="download"><tr><td><img src="images/windows.png" width="85px" /></td><td>
-				<p><b>Windows build</b> (for 32-bit XP and Vista):</p>
-	<p><a href="http://sourceforge.net/projects/structuresynth/files/Structure%20Synth/StructureSynth-Windows_Binary_v1.0.0.zip/download">StructureSynth-Windows_Binary-v1.0.0.zip</a></p>
+				<p><b>Windows build</b> (for XP, Vista, and 7):</p>
+	<p>Installer:<br /><a href="http://sourceforge.net/projects/structuresynth/files/Structure%20Synth/StructureSynth-Windows_Binary_v1.5.0.exe/download">StructureSynth-Windows_Binary-v1.5.0.exe</a></p>
+	<p>Zip-archive (portable, just extract and run):<br /><a href="http://sourceforge.net/projects/structuresynth/files/Structure%20Synth/StructureSynth-Windows_Binary_v1.5.0.zip/download">StructureSynth-Windows_Binary-v1.5.0.zip</a></p>
 				</td></tr><tr><td><img src="images/apple.png" width="85px" /></td><td>
 	
-		<p><b>Mac build</b> (Universal binary, Mac OS 10.5):</p>
-	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Mac_Universal_v1.0.0.zip?use_mirror=mesh">StructureSynth-Mac_Universal-v1.0.0.zip</a></p>
+		<p><b>Mac build</b> (Universal binary, Mac OS 10.6):</p>
+	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Mac_Universal_v1.5.0.zip?use_mirror=mesh">StructureSynth-Mac_Universal_v1.5.0.zip</a></p>
 	<p>(Thanks for David Burnett for providing this - for an outline of the build process see <a href="https://sourceforge.net/forum/message.php?msg_id=6239736">this forum post</a>) </p>
 	
 	</td></tr><tr><td><img src="images/tux.png" width="85px" /></td><td>
 	
 	<p><b>Linux</b>:</p> 
-	<p>For Debian and Ubuntu, there is a 'structure-synth' package. (Thanks to Miriam Ruiz, for maintaining this).</p>
-	<p>For other platforms, you will have to build it yourself. See the build instructions below. The source of the latest release can be found here: <a href="http://sourceforge.net/projects/structuresynth/files/Structure%20Synth/StructureSynth-Source-v1.0.0.zip/download">StructureSynth-Source-v1.0.0.zip</a></p>
+	<p>For Debian and Ubuntu, there is a 'structure-synth' package. (Thanks to Miriam Ruiz for maintaining this).</p>
+	<p>For other platforms, you will have to build it yourself. See the build instructions below. The source of the latest release can be found here: <a href="http://sourceforge.net/projects/structuresynth/files/Structure%20Synth/StructureSynth-Source-v1.5.0.zip/download">StructureSynth-Source-v1.5.0.zip</a></p>
  <p>For the latest changes, it is recommended to pull the source code directly from the SourceForge repository. It can be accessed using SVN (<a href="https://sourceforge.net/svn/?group_id=202402">see instructions</a>).</p>
  
 
@@ -41,7 +42,7 @@ insertHeader("","");
  
  <div class="post">
 				<div class="header">
-					<h3>Build Instructions (Windows XP and Vista)</h3>
+					<h3>Build Instructions (Windows XP, Vista, and 7)</h3>
 				</div>
 				<div class="content">
   
@@ -51,10 +52,10 @@ insertHeader("","");
   <p>You will need to install the <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=0BAF2B35-C656-4969-ACE8-E4C0C0716ADB&amp;displaylang=en">Microsoft Windows Platform SDK</a> since this is not part of the Express editions of Visual Studio - notice that 'Windows 2003 SDK...' is the correct version for Windows XP. On Windows Vista use the <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=E6E1C3DF-A74F-4207-8586-711EBE331CDC&displaylang=en">Windows SDK for Windows Server 2008</a>.
   </p>
   <p>
-  You will also need to download and compile Qt 4.5. While Nokia provide binary Windows builds for Qt, they do not support the Visual C++ compiler. The source for Qt for Windows can be found here: <a href="ftp://ftp.qtsoftware.com/qt/source/qt-win-opensource-src-4.5.1.zip">qt-win-opensource-src-4.5.1.zip</a> (or check for <a href="ftp://ftp.qtsoftware.com/qt/source/">newer versions</a>).
+  You will also need to download Qt 4. Make sure you get a version for Visual C++. Precompiled version for Mingw will not work.
   </p>
   <p>
- For a guide to installing and compiling Qt, see this <a href="http://tom.paschenda.org/blog/?p=28">Qt installation guide</a>.
+ For a guide to installing and compiling Qt, see this <a href="http://tom.paschenda.org/blog/?p=28">Qt installation guide</a>. (Update: Nokia provides precompiled builds for Windows now)
   </p>
  
   </div></div>
@@ -79,12 +80,10 @@ You will need to have a C++ compiler, X11, Qt4, and OpenGL development libs (and
 <p>(No line breaks!)</p>
 <p>If you are feeling adventurous, get the latest <a href="http://sourceforge.net/svn/?group_id=202402">Structure Synth sources</a> otherwise download the latest zipped release above (releases are more stable).
 </p>
-<p>Build Structure Synth. Make sure your working directory is the directory containing the 'Examples' and 'Misc' folder.</p>
-<code>$ qmake-qt4 -project -after "CONFIG+=opengl" -after "QT+=xml opengl script" <br/>
-$ qmake-qt4 <br/>
-$ make <br/>
+<p>Build Structure Synth. Navigate to the 'Build/Linux' directory and run the build script:</p>
+<code>$ sh build.sh
 </code>
-  <p>That's it. Enjoy.</p>
+  <p><br />That's it. Enjoy.</p>
 <p>Notice: if you build Qt from the <a href="http://trolltech.com/developer/downloads/qt/x11">sources</a>, remember to enable OpenGL support, e.g.:</p>
 <pre>
 ./configure -opengl -nomake examples -nomake demos
@@ -129,7 +128,6 @@ Open the 'mac' project, go to "External Frameworks and Libraries" and add QtScri
 
 			<!-- secondary content start -->
 		
-			
 			<h3>Links</h3>
 			<div class="content">
     <a href="http://sourceforge.net/projects/structuresynth/"><img class="center" src="http://sflogo.sourceforge.net/sflogo.php?group_id=202402&amp;type=3" width="125" height="37"  alt="SourceForge.net Logo" /></a>

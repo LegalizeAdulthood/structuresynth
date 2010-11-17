@@ -7,8 +7,22 @@ insertHeader("","");
 	
 
 <div class="post">
-
-<div class="header"><h3>The Anatomy of EisenScript</h3></div><div class="content">
+<div class="content">
+<p>
+This page contains an introduction to the EisenScript language.
+</p>
+<p>
+For more information about various Structure Synth topics, the following blog posts may be useful:
+<ul>
+<li><a href="http://blog.hvidtfeldts.net/index.php/2010/11/scripting-in-structure-synth/">Scripting and animations</a></li>
+<li><a href="http://blog.hvidtfeldts.net/index.php/2010/09/creating-a-raytracer-for-structure-synth/">The internal raytracer</a></li>
+<li><a href="http://www.flickr.com/photos/syntopia/3644799200/">Depth-first EisenScript and Constructive Solid Geometry</a></li>
+<li><a href="http://blog.hvidtfeldts.net/index.php/2009/07/template-export-gui/">The template export GUI</a></li>
+<li><a href="http://blog.hvidtfeldts.net/index.php/2009/04/random-colors-color-pools-and-dual-mersenne-twister-goodness/">Random color pools</a>
+</ul>
+</p>
+</div>
+<div class="header"><h3>The <a name="anatomy"></a>Anatomy of EisenScript</h3></div><div class="content">
 	
 <p>
 Below is an EisenScript sample. Hover the mouse over the various parts for more information.
@@ -39,7 +53,7 @@ rule r2 {
 </pre>
 </div>
 
-<div class="header"><h3>Actions</h3></div><div class="content">
+<div class="header"><h3><a name="actions"></a>Actions</h3></div><div class="content">
 <p><b>Termination criteria</b></p>
 <dl class="longer">
 <dt>set maxdepth [integer]</dt><dd>Breaks after [integer] iterations (generations). This will also serve as a upper recursion limit for all rules.</dd>
@@ -57,7 +71,7 @@ rule r2 {
 
 
 
-<div class="header"><h3>Rule modifiers</h3></div><div class="content">
+<div class="header"><h3><a name="rule">Rule modifiers</h3></div><div class="content">
 	
 <dl class="longer">
 <dt>md / maxdepth [integer]</dt><dd><i>Rule Retirement</i>.Sets the maximum recursive for the rule. The rule would not execute any actions after this limit has been reached.</dd>
@@ -66,7 +80,7 @@ rule r2 {
 </dl>
 </div>
 
-<div class="header"><h3>Transformations</h3></div><div class="content">
+<div class="header"><h3><a name="transformations"></a>Transformations</h3></div><div class="content">
 	
 <p><b>Geometrical transformations</b></p>
 <dl class="oneline">
@@ -101,7 +115,7 @@ rule r2 {
 	
 </div></div>
 	
-<div class="post"><div class="header"><h3>Drawing Primitives</h3></div><div class="content">
+<div class="post"><div class="header"><h3><a name="drawing"></a>Drawing Primitives</h3></div><div class="content">
 
 
 <dl class="oneline">
@@ -119,7 +133,7 @@ rule r2 {
 
 </div></div>
 
-<div class="post"><div class="header"><h3>Preprocessor commands</h3></div><div class="content">
+<div class="post"><div class="header"><h3><a name="preprocessor"></a>Preprocessor commands</h3></div><div class="content">
 
 <dl class="oneline">
 <dt>#define&nbsp;varname&nbsp;value</dt><dd><br />substitutes every occurrence of 'varname' with 'value'. Value may contain spaces.</dd>
@@ -129,7 +143,7 @@ rule r2 {
 
 </div>
 
-<div class="header"><h3>For Context Free / CFDG users</h3></div><div class="content">
+<div class="header"><h3><a name="for"></a>For Context Free / CFDG users</h3></div><div class="content">
 <p>The EisenScript syntax in Structure Synth has a lot in common with CFDG.</p>
 <p>There are however a few important differences:</p>
 <p>
@@ -158,6 +172,17 @@ rule r2 {
 
 			<!-- secondary content start -->
 		
+			<h3>Outline</h3>
+			<div class="content">
+			<a href="#anatomy">The Anatomy of EisenScript</a><br />
+			<a href="#actions">Actions</a><br />
+			<a href="#rule">Rule modifiers</a><br />
+			<a href="#transformations">Transformations</a><br />
+			<a href="#drawing">Drawing Primitives</a><br />
+			<a href="#preprocessor">Preprocessor commands</a><br />
+			<a href="#for">For Context Free / CFDG users</a><br />
+			
+			</div>
 			
 			<h3>Links</h3>
 			<div class="content">

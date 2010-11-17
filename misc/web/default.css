@@ -89,6 +89,14 @@ margin-top: 0px;
 padding-top: 0px;
 }
 
+ul
+{
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+
+
 #upbg
 {
 position: absolute;
@@ -404,6 +412,11 @@ pre {
    background: #F5F5F5;
    margin-bottom: 10px;
 }
+
+code {
+   background: #F5F5F5;
+}
+
 
 .ipre {
    background: #EEE;

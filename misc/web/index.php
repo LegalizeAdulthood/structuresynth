@@ -15,10 +15,19 @@ insertHeader("","");
 					
 					<p>Structure Synth is a cross-platform application for generating 3D structures by specifying a design grammar. Even simple systems may generate surprising and complex structures. The design grammar approach was originally devised by Chris Coyne (for a 2D  implementation see the popular <a href="http://www.contextfreeart.org/">Context Free Art</a>).</p>
 					
-					<p>Structure Synth offers a graphical environment with multiple tabs, syntax highlighting, and OpenGL preview. Integration with third-party renderers (such as Sunflow and POV-Ray) is possible using a flexible template based export system.</p>
+					<p>Features:</p>
+					<ul>
+					<li>Graphical environment with multiple tabs and OpenGL preview</li>
+					<li>Integration with third-party renderers (such as Sunflow and POV-Ray) using a flexible template based export system.</li>
+					<li>Built-in raytracer (with ambient occlusion and depth-of-field)</li>
+					<li>Native OBJ export</li>
+					<li>Built-in JavaScript interpreter for scripting animations</li>
+					<li>Eisenstein Engine driven by dual Mersenne Twister streams</li>
+					</ul>
 					
 					
-<p>Structure Synth is built in C++, OpenGL, and Qt 4.5. <a href="download.php">Builds</a> are currently provided for Windows and Mac. It is possible to compile Structure Synth on Linux as well. On Debian and Ubuntu a 'structure-synth' package exists.</p>
+					
+<p>Structure Synth is built in C++, OpenGL, and Qt 4. <a href="download.php">Builds</a> are currently provided for Windows and Mac. It is possible to compile Structure Synth on Linux as well. On Debian and Ubuntu a 'structure-synth' package exists.</p>
 
 
 
@@ -38,23 +47,20 @@ The progress and design considerations can be tracked at the <a href="http://blo
 		<div class="post">
 				<div class="header">
 					<h3>News</h3>
-					
 				</div>
 				<div class="content">
-			
-				
 				<dl  class="oneline">
-				
-				<dt>10 jul 09</dt><dd>Structure Synth Version 1.0 ("Potemkin") has been released. See the <a href="http://blog.hvidtfeldts.net/index.php/2009/07/structure-synth-10-potemkin-released/">new features</a> or <a href="download.php">download it here</a>.</dd>
-				
+				<dt>17 nov 10</dt><dd>Structure Synth Version 1.5 ("Hinxton") has been released. See the <a href="http://blog.hvidtfeldts.net/index.php/2009/07/structure-synth-10-potemkin-released/">new features</a> or <a href="download.php">download it here</a>.</dd>
+				<dt>10 oct 10</dt><dd>MeshLab now has native <a href="http://blog.hvidtfeldts.net/index.php/2010/10/meshlab-with-structure-synth-integration/">EisenScript support</a>.</dd>				
+				<dt>10 jul 09</dt><dd>Structure Synth Version 1.0 ("Potemkin") has been released. See the <a href="http://blog.hvidtfeldts.net/index.php/2009/07/structure-synth-10-potemkin-released/">new features</a> or <a href="download.php">download it here</a>.</dd>			
 				<dt>28 apr 09</dt><dd>Structure Synth Version 0.9.5 ("Haiku") has been released. Lots of <a href="http://blog.hvidtfeldts.net/index.php/2009/04/structure-synth-095-haiku-released/">new features</a>. <a href="download.php">Download it here</a>.</dd>
 				<dt>23 jan 09</dt><dd>Structure Synth Version 0.9.0 ("Glasnost") released. Now with camera export, preprocessor constants, and more... <a href="download.php">Download it here</a>.</dd>
 				<dt>15 sep 08</dt><dd>David Burnett has kindly provided a <a href="http://oxidizer.sf.net/Structure%20Synth.zip">binary Mac build</a> of Structure Synth Version 0.8.5 (more info at <a href="https://sourceforge.net/forum/forum.php?thread_id=2248832&forum_id=721981">this forum post</a>)</dd>
 				<dt>13 jul 08</dt><dd>Structure Synth Version 0.8.5 released. Some missing dependencies in the Windows build caused the earlier version 0.8.0 not to work on most Windows XP systems. Also other bug fixes.</dd>
-	<dt>5 jun 08</dt><dd>Structure Synth Version 0.8.0 (Exonautica) released with <a href="download.php">binaries</a> built for Windows. Features the new templated rendering system and improved control of the random seed.</dd>
+	<dt>5 jun 08</dt><dd>Structure Synth Version 0.8.0 ("Exonautica") released with <a href="download.php">binaries</a> built for Windows. Features the new templated rendering system and improved control of the random seed.</dd>
 	<dt>30 mar 08</dt><dd>After a short development break, hopefully I'll be able to dedicate some more time to this project the coming months. I've upgraded to Vista and VS 2008 as my primary development platform, and managed to create a build on Mac Os X as well. (see the <a href="download.php">build notes</a>)</dd>					
-<dt>25 dec 07</dt><dd>Structure Synth Version 0.7.0 (Nostromo) released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
-<dt>21 Sep 07</dt><dd>Structure Synth Version 0.5.0 (Graf Zeppelin) released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
+<dt>25 dec 07</dt><dd>Structure Synth Version 0.7.0 ("Nostromo") released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
+<dt>21 Sep 07</dt><dd>Structure Synth Version 0.5.0 ("Graf Zeppelin") released with <a href="download.php">binaries</a> built for Windows.</a></dd>			
 <dt>5 Sep 07</dt><dd>Structure Synth now compiles on Linux.</a></dd>
 <dt>27 Aug 07</dt><dd>Created a <a href="http://flickr.com/groups/structuresynth/">Flickr group for Structure Synth creations</a>.</dd>
 <dt>19 Aug 07</dt><dd>Created this website.</dd>
