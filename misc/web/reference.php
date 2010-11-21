@@ -71,7 +71,7 @@ rule r2 {
 
 
 
-<div class="header"><h3><a name="rule">Rule modifiers</h3></div><div class="content">
+<div class="header"><h3><a name="rule"></a>Rule modifiers</h3></div><div class="content">
 	
 <dl class="longer">
 <dt>md / maxdepth [integer]</dt><dd><i>Rule Retirement</i>.Sets the maximum recursive for the rule. The rule would not execute any actions after this limit has been reached.</dd>
