@@ -16,19 +16,20 @@ insertHeader("","");
 				
 				<table class="download"><tr><td><img src="images/windows.png" width="85px" /></td><td>
 				<p><b>Windows build</b> (for XP, Vista, and 7):</p>
-	<p>Installer:<br /><a href="http://sourceforge.net/projects/structuresynth/files/Structure%20Synth/StructureSynth-Windows_Binary_v1.5.0.exe/download">StructureSynth-Windows_Binary-v1.5.0.exe</a></p>
-	<p>Zip-archive (portable, just extract and run):<br /><a href="http://sourceforge.net/projects/structuresynth/files/Structure%20Synth/StructureSynth-Windows_Binary_v1.5.0.zip/download">StructureSynth-Windows_Binary-v1.5.0.zip</a></p>
+				
+	<p>Installer:<br /><a href="http://downloads.sourceforge.net/project/structuresynth/Structure%20Synth/Version%201.5%20%28Hinxton%29/StructureSynth-Windows_Binary-v1.5.0.exe?r=&ts=1290381520&use_mirror=ignum2">StructureSynth-Windows_Binary-v1.5.0.exe</a></p>
+	<p>Zip-archive (portable, just extract and run):<br /><a href="http://downloads.sourceforge.net/project/structuresynth/Structure%20Synth/Version%201.5%20%28Hinxton%29/StructureSynth-Windows_Binary-v1.5.0.zip?r=&ts=1290381520&use_mirror=ignum">StructureSynth-Windows_Binary-v1.5.0.zip</a></p>
 				</td></tr><tr><td><img src="images/apple.png" width="85px" /></td><td>
 	
-		<p><b>Mac build</b> (Universal binary, Mac OS 10.6):</p>
-	<p><a href="http://downloads.sourceforge.net/structuresynth/StructureSynth-Mac_Universal_v1.5.0.zip?use_mirror=mesh">StructureSynth-Mac_Universal_v1.5.0.zip</a></p>
+		<p><b>Mac build</b> (Universal binary, Mac OS 10.5 and later):</p>
+	<p><a href="http://downloads.sourceforge.net/project/structuresynth/Structure%20Synth/Version%201.5%20%28Hinxton%29/StructureSynth-Mac_Binary-v1.5.0.exe?r=&ts=1290381520&use_mirror=ignum">StructureSynth-Mac_Binary_v1.5.0.zip</a></p>
 	<p>(Thanks for David Burnett for providing this - for an outline of the build process see <a href="https://sourceforge.net/forum/message.php?msg_id=6239736">this forum post</a>) </p>
 	
 	</td></tr><tr><td><img src="images/tux.png" width="85px" /></td><td>
 	
 	<p><b>Linux</b>:</p> 
 	<p>For Debian and Ubuntu, there is a 'structure-synth' package. (Thanks to Miriam Ruiz for maintaining this).</p>
-	<p>For other platforms, you will have to build it yourself. See the build instructions below. The source of the latest release can be found here: <a href="http://sourceforge.net/projects/structuresynth/files/Structure%20Synth/StructureSynth-Source-v1.5.0.zip/download">StructureSynth-Source-v1.5.0.zip</a></p>
+	<p>For other platforms, you will have to build it yourself. See the build instructions below. The source of the latest release can be found here: <a href="http://downloads.sourceforge.net/project/structuresynth/Structure%20Synth/Version%201.5%20%28Hinxton%29/StructureSynth-Source-v1.5.0.exe?r=&ts=1290381520&use_mirror=ignum">StructureSynth-Source-v1.5.0.zip</a></p>
  <p>For the latest changes, it is recommended to pull the source code directly from the SourceForge repository. It can be accessed using SVN (<a href="https://sourceforge.net/svn/?group_id=202402">see instructions</a>).</p>
  
 

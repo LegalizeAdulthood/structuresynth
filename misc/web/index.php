@@ -50,7 +50,7 @@ The progress and design considerations can be tracked at the <a href="http://blo
 				</div>
 				<div class="content">
 				<dl  class="oneline">
-				<dt>17 nov 10</dt><dd>Structure Synth Version 1.5 ("Hinxton") has been released. See the <a href="http://blog.hvidtfeldts.net/index.php/2009/07/structure-synth-10-potemkin-released/">new features</a> or <a href="download.php">download it here</a>.</dd>
+				<dt>22 nov 10</dt><dd>Structure Synth Version 1.5 ("Hinxton") has been released. See the <a href="http://blog.hvidtfeldts.net/index.php/2010/11/structure-synth-1-5-0-hinxton-released/">new features</a> or <a href="download.php">download it here</a>.</dd>
 				<dt>10 oct 10</dt><dd>MeshLab now has native <a href="http://blog.hvidtfeldts.net/index.php/2010/10/meshlab-with-structure-synth-integration/">EisenScript support</a>.</dd>				
 				<dt>10 jul 09</dt><dd>Structure Synth Version 1.0 ("Potemkin") has been released. See the <a href="http://blog.hvidtfeldts.net/index.php/2009/07/structure-synth-10-potemkin-released/">new features</a> or <a href="download.php">download it here</a>.</dd>			
 				<dt>28 apr 09</dt><dd>Structure Synth Version 0.9.5 ("Haiku") has been released. Lots of <a href="http://blog.hvidtfeldts.net/index.php/2009/04/structure-synth-095-haiku-released/">new features</a>. <a href="download.php">Download it here</a>.</dd>
